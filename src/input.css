@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .link-hover{
+        color: aqua;
+        cursor: pointer;
+    }
+}
+.boxmain{
+    @apply border-0 rounded-lg bg-lime-300  w-1/4 px-4 py-6 inline-block m-4;
+}

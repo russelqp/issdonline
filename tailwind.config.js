@@ -6,7 +6,11 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/images/fondo_rayas_verdes.png')"
+      }
+    },
   },
   plugins: [],
 }
