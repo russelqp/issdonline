@@ -1,37 +1,37 @@
+//Variables js
+
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+//- -var js_efects_gral = "./js/efects_gral.js";
+//- -var js_urls = "./js/uris_headers.js";
+-var base_style = "./css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+
+//Variables para metadatos de la págiana actual
+-var meta_titlePage ="ISSDOnline 🥇 - Home";
+-var meta_canonica = "https://www.issdonline.org/";
+-var meta_descPage = "▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes";
+-var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
+-var meta_ogImage = "./images/issdeluxe_online_banner.jpg";
+//- -var style = "./css/style.css";
+//- -var css_nasa = "./css/animations/nasa.css";
+-var titulos = []
+-var descripciones = []
+//- mixin ejemplo(imagen, titulos_, descripciones, url_servicio)
+//-     .servicios__servicio
+//-         img(src="images/servicios/"+imagen alt=titulo_serv)
+//-         h3=titulos
+//-         p=descripciones
+//-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+
+<!DOCTYPE html>
+
 html(lang="es")
   head
-    meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet' href='./css/output.css')
-    title ISSD ONLINE
+    include inc/head.pug
   body 
     container.w-full.m-auto
-      header(class="w-full bg-gradient-to-r from-green-600 via-lime-600 to-green-700 h-[450px] relative")
-        //- .ima_bg(class="flex p-0 cover w-full box-content z-0")
-        //-   img(src="./images/fondo_rayas_verdes.png")
-        .cont_header.w-full.flex.gap-2.justify-around.align-middle(class="border-b-2 border-green-400 items-center z-10")
-          .logo.p-2.flex.gap-2
-            span(class="text-sky-100 font-bold text-2xl") ISSDOnline
-          .menu.p-2
-            .menu_burger
-              .icon_burger  
-              ul(class="flex gap-4 text-white text-lg")
-                li
-                  a(class="hover:link-hover") Home 
-                li
-                  a(class="hover:link-hover") Tutoriales 
-                li
-                  a(class="hover:link-hover") Tips 
-                li
-                  a(class="hover:link-hover") Links
-                li
-                  a(class="hover:link-hover") FAQ
-        .hero(class='max-md:block max-md:p-1 max-w-7xl flex align-middle justify-center self-center p-10 m-auto')
-          .text-main.self-center.justify-center.items-center.m-auto.p-2(class='w-8/12 max-md:w-full max-md:text-center')
-            h1.text-4xl.text-center.font-bold.leading-normal.text-amber-300 INTERNATIONAL SUPERSTAR SOCCER DELUXE #[span(class="text-4xl text-amber-100") ONLINE]
-          //- .ima-main.flex(class='w-8/12 max-md:w-full')
-          //-   img.flex.m-auto(src='./images/issdeluxe_online_banner.jpg' alt='banner juego international superstar soccer deluxe' class='opacity-60')
+      include inc/header.pug
       main.w-full
         .welcome.max-w-7xl.align-middle.justify-center.self-center.p-4.m-auto(class='max-md:block max-md:p-1')
           h2.text-2xl &iquest;C&Oacute;MO JUGAR ISSD ONLINE CON OTROS PLAYERS?
@@ -59,6 +59,4 @@ html(lang="es")
           .boxmain
             h3(class="text-lg flex") Tips 
             p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-      footer.bottom-0.bg-amber-500.text-center.font-bold.p-2
-        w-full
-          span &copy; ISSDOnline.org
+      include inc/footer.pug

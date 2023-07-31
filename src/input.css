@@ -11,3 +11,9 @@
 .boxmain{
     @apply border-0 rounded-lg bg-lime-300  w-1/4 px-4 py-6 inline-block m-4;
 }
+.hero__icon{
+    @apply w-1/5 p-4;
+}
+.hero__icon figure{
+    @apply w-[100px] h-[80px] bg-[#aff3ecc4] ;
+}

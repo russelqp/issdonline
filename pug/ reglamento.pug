@@ -8,7 +8,7 @@
 //- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
--var meta_titlePage ="ISSDOnline 🥇 - Tutoriales";
+-var meta_titlePage ="ISSDOnline 🥇 - Reglamento";
 -var meta_canonica = "https://www.issdonline.org/";
 -var meta_descPage = "▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes";
 -var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
@@ -28,10 +28,25 @@
 html(lang="es")
     head
         include inc/head.pug
-        
     body
-        container(class="w-full m-auto")
+        container
             include inc/header.pug
+
             main
-                h1(class="font-bold 2xl") Tutoriales
-                include inc/footer.pug
+                h1 Reglamento ISSD 
+
+                .main__section
+                    h2 Reglas básicas 
+                .main__section
+                    h2 Goles prohibidos
+                    h3 Goles de super-curva 
+                    p Se considerá gol de super curva cuando se realice un gol realizado con un jugador específico  y el balón haga un efecto de curva de forma exagerada y que el GK no pueda moverse y seguir la animática del balón.
+
+                    .obs La super curva solo existe en el slot 8° del P1 o en el caso de p2 el slot sería el 6° 
+                    .main__section_video 
+                        span Video 1 de ejemplo de super curva
+                    .main__section_video 
+                        span Video 2 Otra variante de super curva
+                .main__section
+                    h2 Reglas 
+            include inc/footer.pug 
