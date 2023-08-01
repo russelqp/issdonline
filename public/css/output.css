@@ -765,7 +765,9 @@ video {
 }
 
 .hero__icon {
+  display: grid;
   width: 20%;
+  place-content: center;
   padding: 1rem;
 }
 
