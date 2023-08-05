@@ -9,11 +9,26 @@
     }
 }
 .boxmain{
-    @apply border-0 rounded-lg bg-lime-300  w-1/4 px-4 py-6 inline-block m-4;
+    @apply border-0 rounded-lg bg-red-issd/40  w-1/4 px-4 py-6 inline-block m-4;
 }
 .hero__icon{
     @apply w-1/5 p-4 grid place-content-center;
 }
 .hero__icon figure{
-    @apply w-[100px] h-[80px] bg-[#aff3ecc4] ;
+    @apply w-[100px] h-[80px] bg-red-issd/50 ;
+}
+.welcome{
+    @apply max-w-7xl align-middle justify-center self-center p-6 m-auto max-md:block max-md:p-1;
+}
+.boxmain h3 {
+    @apply text-lg font-semibold m-auto mb-6 text-center;
+}
+.section-main {
+    @apply flex w-full text-center items-center gap-4 align-middle justify-center self-center p-4 m-auto xl:w-[1280px];
+}
+.section-main--cards {
+    @apply w-full text-center items-center gap-4 align-middle justify-center self-center p-4 m-auto ;
+}
+.article-main {
+    @apply flex w-full text-center items-center gap-4 align-middle justify-center self-center p-4 m-auto bg-red-issd/30;
 }

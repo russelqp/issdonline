@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/images/fondo_rayas_verdes.png')"
+      },
+      colors: {
+        'red-issd': '#E73724',
+        'yellow-issd': '#FFB611'
       }
     },
   },
