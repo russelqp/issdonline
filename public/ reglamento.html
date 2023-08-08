@@ -13,12 +13,14 @@
     <meta property="og:description" content="▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes"/>
     <meta property="og:image" content="./images/issdeluxe_online_banner.jpg"/>
     <link rel="stylesheet" href="./css/output.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"> </script>
     <title>ISSDOnline 🥇 - Reglamento</title>
   </head>
   <body>
     <container>
       <header class="w-full h-[450px] relative">
-        <div class="cont_header w-full flex gap-2 justify-around align-middle  bg-red-issd/80 border-b-2 border-red-issd items-center z-10 xl:w-[1280px] m-auto">
+        <div class="cont_header w-full flex gap-2 justify-around align-middle  bg-red-issd/80 border-b-2 border-red-issd items-center xl:w-[1280px] m-auto">
           <div class="logo p-2 flex gap-2"><span class="text-yellow-issd font-bold text-2xl">ISSDOnline</span></div>
           <div class="menu p-2">
             <div class="menu_burger">
@@ -27,7 +29,21 @@
                 <li><a class="hover:link-hover" href="./" alt="Inico">Home </a></li>
                 <li><a class="hover:link-hover" href="./tutoriales.html" alt="Tutoriales">Tutoriales</a></li>
                 <li><a class="hover:link-hover" href="./rankins.html" alt="Rankins">Rankins </a></li>
-                <li><a class="hover:link-hover" href="./tips.html" alt="Tips">Tips </a></li>
+                <li class="relative">
+                  <button class="rounded-lg px-4 text-center inline-flex items-center" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" data-dropdown-delay="200" type="button">Tips
+                    <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                    </svg>
+                  </button>
+                  <div class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700" id="dropdownHover">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                      <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Defender mejor</a></li>
+                      <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Tipos de goles</a></li>
+                      <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">GK</a></li>
+                      <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Balón parado</a></li>
+                    </ul>
+                  </div>
+                </li>
                 <li><a class="hover:link-hover" href="./enlaces.html" alt="Enlaces">Links</a></li>
                 <li><a class="hover:link-hover" href="./faq.html" alt="FAQ">FAQ</a></li>
                 <li><a class="hover:link-hover" href="./reglamento.html" alt="Reglamento">Reglamento</a></li>

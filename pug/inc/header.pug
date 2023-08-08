@@ -1,7 +1,7 @@
 header(class="w-full h-[450px] relative")
     //- .ima_bg(class="flex p-0 cover w-full box-content z-0")
     //-   img(src="./images/fondo_rayas_verdes.png")
-    .cont_header.w-full.flex.gap-2.justify-around.align-middle(class=" bg-red-issd/80 border-b-2 border-red-issd items-center z-10 xl:w-[1280px] m-auto")
+    .cont_header.w-full.flex.gap-2.justify-around.align-middle(class=" bg-red-issd/80 border-b-2 border-red-issd items-center xl:w-[1280px] m-auto")
         .logo.p-2.flex.gap-2
             span(class="text-yellow-issd font-bold text-2xl") ISSDOnline
         .menu.p-2
@@ -14,8 +14,23 @@ header(class="w-full h-[450px] relative")
                         a(class="hover:link-hover" href="./tutoriales.html" alt="Tutoriales") Tutoriales
                     li
                         a(class="hover:link-hover" href="./rankins.html" alt="Rankins") Rankins 
-                    li
-                        a(class="hover:link-hover" href="./tips.html" alt="Tips") Tips 
+                    li.relative
+                        button#dropdownHoverButton.rounded-lg.px-4.text-center.inline-flex.items-center(data-dropdown-toggle='dropdownHover' data-dropdown-trigger='hover' data-dropdown-delay='200' type='button') Tips
+                            svg(class='w-2.5 h-2.5 ml-2.5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 10 6')
+                                path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
+                        #dropdownHover.z-10.hidden.bg-white.divide-y.divide-gray-100.rounded-lg.shadow.w-44(class='dark:bg-gray-700')
+                            ul.py-2.text-sm.text-gray-700(class='dark:text-gray-200' aria-labelledby='dropdownHoverButton')
+                                li
+                                    a.block.px-4.py-2(href='#' class='hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white') Defender mejor
+                                li
+                                    a.block.px-4.py-2(href='#' class='hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white') Tipos de goles
+                                li
+                                    a.block.px-4.py-2(href='#' class='hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white') GK
+                                li
+                                    a.block.px-4.py-2(href='#' class='hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white') Balón parado
+
+                        
+                        //- a(class="hover:link-hover" href="./tips.html" alt="Tips") Tips 
                     li
                         a(class="hover:link-hover" href="./enlaces.html" alt="Enlaces") Links
                     li
