@@ -35,3 +35,6 @@
 .article-main {
     @apply flex w-full text-center items-center gap-4 align-middle justify-center self-center p-4 m-auto bg-red-issd/30;
 }
+.is-active {
+    @apply right-0;
+  }

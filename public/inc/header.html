@@ -1,41 +1,53 @@
 
-<header class="w-full h-[450px] relative">
-  <div class="cont_header w-full flex gap-2 justify-around align-middle  bg-red-issd/80 border-b-2 border-red-issd items-center xl:w-[1280px] m-auto">
-    <div class="logo p-2 flex gap-2"><span class="text-yellow-issd font-bold text-2xl">ISSDOnline</span></div>
-    <div class="menu p-2">
-      <div class="menu_burger">
-        <div class="icon_burger"> </div>
-        <ul class="flex gap-4 text-white text-lg">
-          <li><a class="hover:link-hover" href="./" alt="Inico">Home </a></li>
-          <li><a class="hover:link-hover" href="./tutoriales.html" alt="Tutoriales">Tutoriales</a></li>
-          <li><a class="hover:link-hover" href="./rankins.html" alt="Rankins">Rankins </a></li>
-          <li class="relative">
-            <button class="rounded-lg px-4 text-center inline-flex items-center" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" data-dropdown-delay="200" type="button">Tips
-              <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
-              </svg>
-            </button>
-            <div class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700" id="dropdownHover">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Defender mejor</a></li>
-                <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Tipos de goles</a></li>
-                <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">GK</a></li>
-                <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Balón parado</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a class="hover:link-hover" href="./enlaces.html" alt="Enlaces">Links</a></li>
-          <li><a class="hover:link-hover" href="./faq.html" alt="FAQ">FAQ</a></li>
-          <li><a class="hover:link-hover" href="./reglamento.html" alt="Reglamento">Reglamento</a></li>
-        </ul>
-      </div>
+<header class="lg:w-full h-[450px]">
+  <div class="cont_header bg-red-issd/80 border-b-1 border-red-issd items-center xl:w-[1280px] m-auto w-full flex justify-between align-middle relative mb-14 left-0 right-0 top-0 bottom-0 h-10">
+    <div class="logo fixed h-10 items-center flex left-4 top-0 z-10 transition ease-in-out duration-100"><span class="text-yellow-issd font-bold text-2xl align-middle">ISSDOnline</span></div>
+    <div class="icon-menu fixed h-10 items-center flex right-4  pointer z-10 transition ease-in-out duration-100 selection top-0">
+      <svg class="icon icon-tabler icon-tabler-menu-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
     </div>
+    <div class="icon-tache scale-0 fixed h-10 items-center flex right-4  pointer z-10 transition ease-in-out duration-100 selection top-0">
+      <svg class="icon icon-tabler icon-tabler-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 6l-12 12"></path>
+        <path d="M6 6l12 12"></path>
+      </svg>
+    </div>
+    <nav>
+      <ul class="menu text-white text-lg t-0pt-5 right-[-100vw] pointer top-5 w-2/4 bg-orange-300 fixed z-[5] transition ease-in-out duration-100">     
+        <li class="pointer my-1 mx-auto"><a class="hover:link-hover" href="./" alt="Inico">Home </a></li>
+        <li><a class="hover:link-hover" href="./tutoriales.html" alt="Tutoriales">Tutoriales</a></li>
+        <li><a class="hover:link-hover" href="./rankins.html" alt="Rankins">Rankins </a></li>
+        <li class="relative">
+          <button class="rounded-lg px-4 text-center inline-flex items-center" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" data-dropdown-delay="200" type="button">Tips
+            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+            </svg>
+          </button>
+          <div class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700" id="dropdownHover">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+              <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Defender mejor</a></li>
+              <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Tipos de goles</a></li>
+              <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">GK</a></li>
+              <li><a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="#">Balón parado</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="hover:link-hover" href="./enlaces.html" alt="Enlaces">Links</a></li>
+        <li><a class="hover:link-hover" href="./faq.html" alt="FAQ">FAQ</a></li>
+        <li><a class="hover:link-hover" href="./reglamento.html" alt="Reglamento">Reglamento</a></li>
+      </ul>
+    </nav>
   </div>
   <div class="hero max-md:block max-md:p-1 max-w-7xl flex align-middle justify-center self-center p-10 m-auto ">
     <div class="text-main self-center justify-center items-center m-auto p-2 w-8/12 max-md:w-full max-md:text-center">
       <h1 class="text-4xl text-center font-bold leading-normal text-yellow-issd">INTERNATIONAL SUPERSTAR SOCCER DELUXE <span class="text-4xl text-red-issd/50">ONLINE</span></h1>
     </div>
-    <div class="hero__icons_bar w-full m-auto p-2 absolute z-10 bg-red-issd/50 bottom-0 h-30 grid grid-cols-5 justify-items-center xl:w-[1280px]">
+    <div class="hero__icons_bar hidden m-auto p-2 absolute z-10 bg-red-issd/50 bottom-0 h-30 md:grid md:grid-cols-5 justify-items-center xl:w-[1280px]">
       <div class="hero__icon">
         <figure></figure>
       </div>
