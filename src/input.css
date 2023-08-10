@@ -7,12 +7,15 @@
 
 @layer components {
     .link-hover{
-        color: aqua;
         cursor: pointer;
+        background-color:rgb(247, 60, 60);
+        display: flex;
+        width: 100%;
+        padding-left: 10px
     }
 }
 .boxmain{
-    @apply border-0 rounded-lg bg-red-issd/40  w-1/4 px-4 py-6 inline-block m-4;
+    @apply border-0 rounded-lg bg-red-issd/40  md:w-1/4 px-4 py-6 inline-block m-4;
 }
 .hero__icon{
     @apply w-1/5 p-4 grid place-content-center;
@@ -37,4 +40,76 @@
 }
 .is-active {
     @apply right-0;
+}
+.shadow-menu{
+    box-shadow: -2px 1px 3px 0.5px rgba(20,20,20,.6);
+    border-bottom-left-radius: 10px;     
+}
+.btn_tips ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+    position: absolute;
+    right: 0;
+    left: 0;
   }
+
+  .btn_tips ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn_tips:hover ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+    transform: translateX(20px);
+    position: initial;
+  }
+.quotaOpen::before{
+    content:'';
+}
+
+.myq::before{
+    display: inline-flex;
+    content: "«";
+    margin-right: 8px;
+    background-color: #E73724;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+    color: #fff;
+    font-family: Gordita, sans-serif;
+    left: 0;
+    position: absolute;
+    line-height: 1;
+    top: 0;
+}
+.myq::after{
+    display: inline-flex;
+    content: "»";
+    margin-left: 8px;
+    background-color: #E73724;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+    color: #fff;
+    font-family: Gordita, sans-serif;
+    right: 0;
+    position: absolute;
+    line-height: 1;
+    bottom: 0;
+}
