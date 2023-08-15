@@ -33,5 +33,34 @@ html(lang="es")
         container(class="w-full m-auto")
             include inc/header.pug
             main
-                h1(class="font-bold 2xl") Encuentra la respuesta a tus dudas con respecto a jugar en linea.
-                include inc/footer.pug
+                main__section 
+                    main__section__article
+                        h1(class="font-bold 2xl") Preguntas y dudas frecuentes con respecto a ISSD ONline
+                        .faq-content
+                            .max-w-screen-xl.mx-auto.px-5.bg-white.min-h-sceen
+                                .flex.flex-col.items-center
+                                    h2.font-bold.text-5xl.mt-5.tracking-tight
+                                    | FAQ
+                                    p.text-neutral-500.text-xl.mt-3
+                                    | Frequenty asked questions
+                                .grid.divide-y.divide-neutral-200.max-w-xl.mx-auto.mt-8
+                                    .py-5
+                                        details.group
+                                            summary.flex.justify-between.items-center.font-medium.cursor-pointer.list-none
+                                                span  ¿Cómo puedo participar en los torneos?
+                                                span.transition(class='group-open:rotate-180')
+                                            svg(fill='none' height='24' shape-rendering='geometricPrecision' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewbox='0 0 24 24' width='24')
+                                                path(d='M6 9l6 6 6-6')
+                                            p.text-neutral-600.mt-3(class='group-open:animate-fadeIn')
+                                                | Encuentra en nuestra página los diferentes grupos/ligas de la comunidad ISSD para que puedas enterarle de los próximos porneos que están por iniciar. También puedes estar al pendiente de nuestras noticias en este sitio.
+                                    .py-5
+                                        details.group
+                                            summary.flex.justify-between.items-center.font-medium.cursor-pointer.list-none
+                                                span  ¿Cómo puedo gamarle a Viny?
+                                                span.transition(class='group-open:rotate-180')
+                                            svg(fill='none' height='24' shape-rendering='geometricPrecision' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewbox='0 0 24 24' width='24')
+                                                path(d='M6 9l6 6 6-6')
+                                            p.text-neutral-600.mt-3(class='group-open:animate-fadeIn')
+                                                | Haciendome una transferencia y yo con gusto hablo con él.
+
+            include inc/footer.pug
