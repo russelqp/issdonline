@@ -1,0 +1,67 @@
+//Variables js
+
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "./js/efects_gral.js";
+//- -var js_urls = "./js/uris_headers.js";
+-var base_style = "./css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+
+//Variables para metadatos de la págiana actual
+-var meta_titlePage ="ISSDOnline 🥇 - Rankings";
+-var meta_canonica = "https://www.issdonline.org/";
+-var meta_descPage = "▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes";
+-var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
+-var meta_ogImage = "./images/issdeluxe_online_banner.jpg";
+//- -var style = "./css/style.css";
+//- -var css_nasa = "./css/animations/nasa.css";
+-var titulos = []
+-var descripciones = []
+//- mixin ejemplo(imagen, titulos_, descripciones, url_servicio)
+//-     .servicios__servicio
+//-         img(src="images/servicios/"+imagen alt=titulo_serv)
+//-         h3=titulos
+//-         p=descripciones
+//-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+<!DOCTYPE html>
+
+html(lang="es")
+    head
+        include inc/head.pug
+    body
+        container
+            include inc/header.pug
+            main
+                .section-main.block
+                    h1.block Rankings
+                    .article-main(class="overflow-hidden")
+                        h2 Copa ISSD PRO | Ranking julio 2023
+                        br
+                        span ► 11º COPA ISSD PRO: ITALIA ◄
+                        br
+                        span ►►► RANKING ◄◄◄
+                        br
+                        span ► CLASIFICACION FINAL ◄
+                        br
+                        b Campeon: [2]Vinny(ARG)** (20.00 USD)
+                        br
+                        b Sub-Campeon: [3]Webber S.E.P(BRA)** (10.00 USD)
+                        br
+                        b Tercer Lugar: [1]Daniel F(BRA)º (5.00 USD)
+                        br 
+                        b ► MEJOR ATAQUE / GOLEADOR ◄
+                        br
+                        span [3]Webber S.E.P(BRA)** [ 60 / 6 ] = 10
+                        br 
+                        b ► MEJOR DEFENSA ◄
+                        br 
+                        span [2]Vinny(ARG)** [ 20 / 5 ] = 4
+                        br 
+                        span  #[b ► RANKING (Explicacion):] http://copaissdpro.foroactivo.com/t2-ranking-explicacion
+                        br 
+                        span #[b ► TORNEO LINK:] https://www.todotorneos.com/torneo/torneosmain.php?torneo=343512&fbclid=IwAR211FTsmrKzwBtIpN6d9eDikVX0BNUkT4GU5v8HkZvWECulBG8rmUuZIXU
+
+                        figure 
+                            img(src="./images/varios/ranking_julio2023_issdpro.jpg" alt="ranking copa issd pro julio 2023")
+                
+            include inc/footer.pug 

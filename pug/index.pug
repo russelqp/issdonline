@@ -32,42 +32,32 @@ html(lang="es")
   body 
     container.w-full.m-auto.py-10
       include inc/header.pug
-      main.w-full
-        .welcome
-          .welcome__article(class="flex w-full p-2 md:p-6 content-center  justify-center")
-            p(class="bg-red-issd/5 myq text-3xl font-medium font-sans leading-tight px-14 relative") Rememora este juegazo compitiendo con otros jugadores de manera online
-        .welcome
-          h2.text-2xl &iquest;C&Oacute;MO JUGAR ISSD ONLINE CON OTROS PLAYERS?
-          p.text-xl
-            | Aqu&iacute; te ense&ntilde;aremos c&oacute;mo jugar con otras personas este cl&aacute;sico juego retro y tambi&eacute;n rar tus habilidades. Te compartiremos enlaces de p&aacute;ginas de facebook y grupos de whatsapp en donde podr&aacute;s participar en los distintos torneos que apasionados de este juego organizan para esta gran comunidad.
-        .section-main--cards
+      include inc/hero.pug
+      main
+        section.welcome
+          article.welcome__article
+            p(class="bg-gray-300/50 myq text-3xl font-medium font-sans leading-tight px-14 relative") Rememora este juegazo compitiendo con otros jugadores de manera online
+        section.welcome
+          article.welcome__article
+            h2.text-2xl Juega ISSD Online con otros players, aquí te enseñamos como
+            p(class="text-xl hidden md:flex")
+              | Aqu&iacute; te ense&ntilde;aremos c&oacute;mo jugar con otras personas este cl&aacute;sico juego retro y tambi&eacute;n a superar tus habilidades. Te compartimos enlaces de p&aacute;ginas de facebook y grupos de whatsapp en donde podr&aacute;s participar en los distintos torneos que apasionados de este juego organizan para esta gran comunidad.
+        section.section--cards
           .boxmain
             h3 Tutoriales 
-            p ¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.
+            p(class="hidden md:flex") ¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.
           .boxmain
             h3 Tips 
-            p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
+            p(class="hidden md:flex") Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
           .boxmain
-            h3 Tips 
-            p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-          .boxmain
-            h3 Tips 
-            p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-          .boxmain
-            h3 Tips 
-            p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-          .boxmain
-            h3 Tips 
-            p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-          .boxmain
-            h3 Tips 
-            p Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-        .section-main
-          .article-main
-            h3 Grupos/ Ligas de ISSD
+            h3 Ligas 
+            p(class="hidden md:flex") Conoce diferentes ligas en las que puedes participar.
+        section.section-main
+          article.article-main
+            h3.block Rankings ISSD
             // component
             // This is an example component
-            .max-w-2xl.mx-auto
+            .max-w-2xl.mx-auto.block
               #default-carousel.relative(data-carousel='static')
                 // Carousel wrapper
                 .overflow-hidden.relative.h-56.rounded-lg(class='sm:h-64 xl:h-80 2xl:h-96')
@@ -98,11 +88,11 @@ html(lang="es")
                       path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5l7 7-7 7')
                     span.hidden Next
                     
-                script(src='https://unpkg.com/flowbite@1.4.0/dist/flowbite.js')
 
-        .section-main
-          .article-main
-            h2 ISSD News
-            p Las noticias calientidas de la comunidad ISSD.
+
+        section.section-main
+          article.article-main
+            h2.block.w-full ISSD News
+            p.block.w-full Las noticias calientidas de la comunidad ISSD.
 
       include inc/footer.pug
