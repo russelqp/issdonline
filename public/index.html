@@ -17,9 +17,9 @@
     <script src="https://kit.fontawesome.com/bd29bbd3bd.js" crossorigin="anonymous"></script>
     <title>ISSDOnline 🥇 - Home</title>
   </head>
-  <body> 
+  <body class="relative"> 
     <container class="w-full m-auto py-10">
-      <header class="lg:w-full md:h-[450px] md:relative">
+      <header class="lg:w-full md:relative bg-gray-300">
         <div class="cont_header bg-red-issd/80 border-b-1 border-red-issd items-center xl:w-[1280px] m-auto w-full flex justify-between align-middle relative mb-0 left-0 right-0 top-0 bottom-0 h-12">
           <div class="logo fixed h-12 items-center flex left-4 top-0 z-10  ease duration-[0.5s]"><a class="h-12" href="./" alt="Inico"> <span class="text-white font-bold text-3xl align-middle h-12">ISSDOnline</span></a></div>
           <div class="icon-menu fixed h-12 items-center flex right-4  pointer z-10  ease duration-[0.5s] selection top-0 text-white">
@@ -57,56 +57,67 @@
           </nav>
         </div>
       </header>
-      <div class="hero max-md:block max-md:p-1 max-w-7xl align-middle justify-center self-center m-auto ">
-        <div class="text-main self-center justify-center items-center m-auto p-2 w-8/12 max-md:w-full max-md:text-center">
+      <div class="hero max-md:block max-md:p-1 max-w-7xl align-middle justify-center self-center m-auto lg:grid lg:grid-cols-2 lg:gap-4 lg:p-2">
+        <div class="text-main self-center justify-center items-center m-auto p-2 w-8/12 max-md:w-full max-md:text-center ">
           <h1 class="text-4xl text-center font-bold leading-normal text-yellow-issd">INTERNATIONAL SUPERSTAR SOCCER DELUXE <span class="text-4xl text-red-issd/50">ONLINE</span></h1>
         </div>
-        <div class="hero__img flex w-full m-auto text-center justify-center"><img class="p-0 m-0 max-w-[400px]" src="./images/varios/issdonline_campo.jpg" alt="captura juego issdeluxe" width="370" height="400"/></div>
-        <div class="hero__icons_bar hidden m-auto p-2 absolute z-10 bg-gray-300/50 bottom-0 h-30 md:grid md:grid-cols-5 justify-items-center xl:w-[1280px]">
+        <div class="hero__img flex w-full m-auto text-center justify-center"><img class="p-0 m-0 max-w-[400px] " src="./images/varios/issdonline_campo.jpg" alt="captura juego issdeluxe" width="370" height="400"/></div>
+        <div class="hero__icons_bar hidden m-auto p-2 z-10 bg-gray-300/50 bottom-0 h-30 md:grid md:grid-cols-5 justify-items-center w-full lg:col-span-2">
           <div class="hero__icon">
-            <figure></figure>
+            <figure><img src="images/soccerball01.png" alt="pelota de futbol soccer"/></figure>
           </div>
           <div class="hero__icon">
-            <figure></figure>
+            <figure><img src="images/soccerball01.png" alt="pelota de futbol soccer"/></figure>
           </div>
           <div class="hero__icon">
-            <figure></figure>
+            <figure><img src="images/soccerball01.png" alt="pelota de futbol soccer"/></figure>
           </div>
           <div class="hero__icon">
-            <figure></figure>
+            <figure><img src="images/soccerball01.png" alt="pelota de futbol soccer"/></figure>
           </div>
           <div class="hero__icon">
-            <figure></figure>
+            <figure><img src="images/soccerball01.png" alt="pelota de futbol soccer"/></figure>
           </div>
         </div>
       </div>
       <main>
         <section class="welcome">
           <article class="welcome__article hidden">
-            <p class="bg-gray-300/50 myq text-3xl font-medium font-sans leading-tight px-14 relative">Rememora este juegazo compitiendo con otros jugadores de manera online</p>
+            <p class="bg-gray-300/50 myq text-3xl font-medium font-sans leading-tight px-14 relative">Rememora este juegazo compitiendo con otros jugadores de manera online en torneos creados por la comunidad</p>
           </article>
         </section>
         <section class="welcome">
           <article class="welcome__article">
-            <h2 class="text-2xl">Juega ISSD Online con otros players, aquí te enseñamos como</h2>
+            <h2 class="text-2xl mb-8 text-left md:font-bold">Juega ISSD Online con otras personas</h2>
             <p class="text-xl hidden md:flex">Aqu&iacute; te ense&ntilde;aremos c&oacute;mo jugar con otras personas este cl&aacute;sico juego retro y tambi&eacute;n a superar tus habilidades. Te compartimos enlaces de p&aacute;ginas de facebook y grupos de whatsapp en donde podr&aacute;s participar en los distintos torneos que apasionados de este juego organizan para esta gran comunidad.</p>
           </article>
         </section>
-        <section class="section--cards">
-          <div class="boxmain">
-            <h3>Tutoriales </h3>
-            <p class="hidden md:flex">¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.</p>
-          </div>
-          <div class="boxmain">
-            <h3>Tips </h3>
-            <p class="hidden md:flex">Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.</p>
-          </div>
-          <div class="boxmain">
-            <h3>Ligas </h3>
-            <p class="hidden md:flex">Conoce diferentes ligas en las que puedes participar.</p>
-          </div>
-        </section>
-        <section class="section-main">
+        <section class="section--cards"><a class="btn_boxmain" href="tutoriales.html">
+            <div class="boxmain">
+              <div class="--box-h">
+                <h3>Tutoriales</h3>
+              </div>
+              <div class="--box-text">
+                <p class="hidden md:flex">¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.</p>
+              </div>
+            </div></a><a class="btn_boxmain" href="tips.html">
+            <div class="boxmain">
+              <div class="--box-h">
+                <h3>Tips </h3>
+              </div>
+              <div class="--box-text">
+                <p class="hidden md:flex">Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.</p>
+              </div>
+            </div></a><a class="btn_boxmain" href="links.html">
+            <div class="boxmain">
+              <div class="--box-h">
+                <h3>Ligas </h3>
+              </div>
+              <div class="--box-text">
+                <p class="hidden md:flex">Conoce diferentes ligas en las que puedes participar.</p>
+              </div>
+            </div></a></section>
+        <section class="section-main hidden">
           <article class="article-main">
             <h3 class="block">Rankings ISSD</h3>
             <!-- component-->
@@ -148,10 +159,8 @@
           </article>
         </section>
       </main>
-      <footer class="bottom-0 bg-red-issd text-center font-bold p-2">
-        <w-full><span>&copy; ISSDOnline.org</span></w-full>
-      </footer>
-      <script src="./js/efects_gral.js"></script>
     </container>
+    <footer class="bottom-0 bg-red-issd text-center font-bold p-2 w-full"><span>&copy; ISSDOnline.org</span></footer>
+    <script src="./js/efects_gral.js"></script>
   </body>
 </html>

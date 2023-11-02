@@ -18,27 +18,38 @@
 }
 
 /*@applys*/
-
+.btn_boxmain{
+    @apply cursor-auto flex hover:cursor-pointer;
+}
 .boxmain{
-    @apply border-2 rounded-lg border-gray-300/50 md:w-1/4 px-4 py-6 block md:inline-block m-4;
+    @apply rounded-lg bg-gray-300/70 block md:inline-block w-full;
 }
 .hero__icon{
-    @apply w-1/5 p-4 grid place-content-center;
+    @apply w-1/5 p-0 grid place-content-center;
 }
 .hero__icon figure{
-    @apply w-[100px] h-[80px] bg-red-issd/50 ;
+    @apply w-[100px] h-[100px] ;
 }
 .welcome{
     @apply max-w-7xl align-middle justify-center self-center p-6 m-auto max-md:block max-md:p-1;
 }
-.boxmain h3 {
-    @apply text-lg font-semibold m-auto mb-6 text-center text-red-issd;
+.boxmain .--box-h{
+    @apply bg-blue-300 px-6 py-4 rounded-t-lg;
+}
+.boxmain .--box-text{
+    @apply px-6 py-4 rounded-b-lg text-xl;
+}
+.boxmain .--box-h{
+    @apply text-2xl font-semibold m-auto mb-6 text-left text-red-issd;
+}
+.boxmain .--box-h:hover{
+    @apply bg-red-300 text-gray-700 text-center;
 }
 .section-main {
     @apply flex w-full text-left items-center gap-4 align-middle justify-center self-center p-4 m-auto xl:w-[1280px];
 }
 .section--cards {
-    @apply w-full text-center items-center gap-4 align-middle justify-center self-center md:p-6 m-auto xl:w-[1280px];
+    @apply lg:grid w-full text-center items-center gap-4 justify-between md:items-baseline md:p-6 m-auto xl:w-[1280px] lg:grid-cols-3;
 }
 .welcome__article{
     @apply w-full p-2 md:p-6 content-center  justify-center;

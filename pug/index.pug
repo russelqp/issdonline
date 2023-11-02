@@ -29,30 +29,39 @@
 html(lang="es")
   head
     include inc/head.pug
-  body 
+  body.relative 
     container.w-full.m-auto.py-10
       include inc/header.pug
       include inc/hero.pug
       main
         section.welcome
           article.welcome__article.hidden
-            p(class="bg-gray-300/50 myq text-3xl font-medium font-sans leading-tight px-14 relative") Rememora este juegazo compitiendo con otros jugadores de manera online
+            p(class="bg-gray-300/50 myq text-3xl font-medium font-sans leading-tight px-14 relative") Rememora este juegazo compitiendo con otros jugadores de manera online en torneos creados por la comunidad
         section.welcome
           article.welcome__article
-            h2.text-2xl Juega ISSD Online con otros players, aquí te enseñamos como
+            h2(class="text-2xl mb-8 text-left md:font-bold") Juega ISSD Online con otras personas
             p(class="text-xl hidden md:flex")
               | Aqu&iacute; te ense&ntilde;aremos c&oacute;mo jugar con otras personas este cl&aacute;sico juego retro y tambi&eacute;n a superar tus habilidades. Te compartimos enlaces de p&aacute;ginas de facebook y grupos de whatsapp en donde podr&aacute;s participar en los distintos torneos que apasionados de este juego organizan para esta gran comunidad.
         section.section--cards
-          .boxmain
-            h3 Tutoriales 
-            p(class="hidden md:flex") ¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.
-          .boxmain
-            h3 Tips 
-            p(class="hidden md:flex") Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
-          .boxmain
-            h3 Ligas 
-            p(class="hidden md:flex") Conoce diferentes ligas en las que puedes participar.
-        section.section-main
+          a(class="btn_boxmain" href="tutoriales.html")
+            .boxmain
+              .--box-h
+                h3 Tutoriales
+              .--box-text
+                p(class="hidden md:flex") ¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.
+          a(class="btn_boxmain" href="tips.html")
+            .boxmain
+              .--box-h
+                h3 Tips 
+              .--box-text
+                p(class="hidden md:flex") Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
+          a(class="btn_boxmain" href="links.html")
+            .boxmain
+              .--box-h
+                h3 Ligas 
+              .--box-text
+                p(class="hidden md:flex") Conoce diferentes ligas en las que puedes participar.
+        section.section-main.hidden
           article.article-main
             h3.block Rankings ISSD
             // component
@@ -95,4 +104,4 @@ html(lang="es")
             h2.block.w-full ISSD News
             p.block.w-full Las noticias calientidas de la comunidad ISSD.
 
-      include inc/footer.pug
+    include inc/footer.pug

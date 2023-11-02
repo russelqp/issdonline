@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
-    "./public/**/*.{html,js}",
+    "./public/**/*.{html,js,pug}",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {

@@ -27,42 +27,39 @@
 
 html(lang="es")
     head
-        include inc/head.pug
-        
+        include inc/head.pug  
     body
-        container(class="w-full m-auto")
+        container.w-full.m-auto.py-10
             include inc/header.pug
             main
-                section.section-mains
-                    article.article-main 
-                        h2(class="font-bold 2xl text-left text-red-issd") Cómo jugar ISSD de forma online
-                        p Para poder jugar contra otros jugadores necesitas 5 cosas:
-                        ol.custom-counter.my-colors
-                            li Una Computadora de escritorio o laptop.
-                            li Internet, buena conexión para evitar lag.
-                            li El programa hamachi, link para descarga: #[b https://vpn.net/]
-                            li Emulador Zsnesw versión 1.42: #[b https://zsnes.com/index.php?page=files]
-                            li Rom o juego (debe de ser la misma versión que el que usará tu oponente, mismo nombre de archivo y extensión.
-                        
-                        p.overflow-hidden Link ROM ISSD versión U: #[br] #[b https://romsmania.net/super-nintendo/rom-international-superstar-soccer-deluxe/]
-                    
-                        h3.mt-10 Videotutoriales
-                        .videotutorial-min.my-colors
-                            .content-img 
-                                img(src="./images/varios/hamachi.jpg", alt="videotutorial instalación hamachi")
-                            .title-videotutorial
-                                span Instalación de Hamachi
-                        .videotutorial-min.my-colors
-                            .content-img 
-                                img(src="./images/varios/zsnesw.jpg", alt="videotutorial instalación hamachi")
-                            .title-videotutorial
-                                span Instalación de Zsnesw 1.42
-                    article.article-main 
-                        h2(class="font-bold 2xl text-left text-red-issd") Otros archivos/ roms personalizados de  ISSD
-
-
-            
-            
-            
-            
-            include inc/footer.pug
+                section.section-main
+                    article(class="tuto_card w-[300px]")
+                        a(class="hover:cursor-pointer" href="comojugarissdonline.html")
+                            .tuto_box
+                                figure
+                                    img(class="w-full p-0 m-0" src="images/icon_tutorial.png", alt="imagen tutorial icon")
+                                figcaption 
+                                    h2 Cómo jugar ISSD Online
+                    article(class="tuto_card w-[300px]")
+                        a(class="hover:cursor-pointer" href="comojugarissdonline.html")
+                            .tuto_box
+                                figure
+                                    img(class="w-full p-0 m-0" src="images/icon_tutorial.png", alt="imagen tutorial icon")
+                                figcaption 
+                                    h2 Cómo jugar ISSD Online
+                    article(class="tuto_card w-[300px]")
+                        a(class="hover:cursor-pointer" href="comojugarissdonline.html")
+                            .tuto_box
+                                figure
+                                    img(class="w-full p-0 m-0" src="images/icon_tutorial.png", alt="imagen tutorial icon")
+                                figcaption 
+                                    h2 Cómo jugar ISSD Online
+                    article(class="tuto_card w-[300px]")
+                        a(class="hover:cursor-pointer" href="comojugarissdonline.html")
+                            .tuto_box
+                                figure
+                                    img(class="w-full p-0 m-0" src="images/icon_tutorial.png", alt="imagen tutorial icon")
+                                figcaption 
+                                    h2 Cómo jugar ISSD
+        
+        include inc/footer.pug
