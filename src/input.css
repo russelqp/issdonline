@@ -4,7 +4,7 @@
 
 /* Variables */
 .my-colors{
-    --primary-issd-red: rgb(231 55 36 / 0.8);
+    --primary-issd-red: rgb(247, 60, 60);
 }
 
 @layer components {
@@ -22,7 +22,7 @@
     @apply cursor-auto flex hover:cursor-pointer;
 }
 .boxmain{
-    @apply rounded-lg bg-gray-300/70 block md:inline-block w-full;
+    @apply rounded-2xl bg-white block md:inline-block w-full;
 }
 .hero__icon{
     @apply w-1/5 p-0 grid place-content-center;
@@ -30,20 +30,20 @@
 .hero__icon figure{
     @apply w-[100px] h-[100px] ;
 }
-.welcome{
+.welcome, .main__section{
     @apply max-w-7xl align-middle justify-center self-center p-6 m-auto max-md:block max-md:p-1;
 }
 .boxmain .--box-h{
-    @apply bg-blue-300 px-6 py-4 rounded-t-lg;
+    @apply bg-red-500 px-6 py-4 rounded-t-2xl;
 }
 .boxmain .--box-text{
-    @apply px-6 py-4 rounded-b-lg text-xl;
+    @apply px-6 py-4 rounded-b-2xl text-xl;
 }
 .boxmain .--box-h{
-    @apply text-2xl font-semibold m-auto mb-6 text-left text-red-issd;
+    @apply text-2xl font-semibold m-auto mb-6 text-left text-white;
 }
 .boxmain .--box-h:hover{
-    @apply bg-red-300 text-gray-700 text-center;
+    @apply bg-green-500 text-center;
 }
 .section-main {
     @apply flex w-full text-left items-center gap-4 align-middle justify-center self-center p-4 m-auto xl:w-[1280px];
@@ -51,7 +51,7 @@
 .section--cards {
     @apply lg:grid w-full text-center items-center gap-4 justify-between md:items-baseline md:p-6 m-auto xl:w-[1280px] lg:grid-cols-3;
 }
-.welcome__article{
+.welcome__article, .main__section__article{
     @apply w-full p-2 md:p-6 content-center  justify-center;
 }
 .article-main {
@@ -64,19 +64,34 @@
 
 /*Card skills*/
 .content_skill_cards{
-    @apply lg:grid lg:grid-cols-5 gap-4;
+    @apply sm:grid lg:grid-cols-2 xl:grid-cols-3 gap-4 ;
+}
+.content_skill_cards a{
+    @apply transition-all
+}
+.content_skill_cards a:hover{
+    @apply scale-105
 }
 .__skill_card {
-    @apply grid grid-rows-3;
+    @apply grid grid-rows-3 bg-white rounded-2xl;
 }
 .__skill_card_img {
-    @apply flex bg-orange-700 justify-center;
+    @apply bg-green-500 grid content-center justify-center h-[400px] m-auto w-full rounded-t-2xl;
 }
-.__skill_card_title {
-    @apply flex bg-orange-500 ;
+.__skill_card_img img{
+    @apply w-48 h-auto border-2;
 }
-.__skill_card_text {
-    @apply flex bg-orange-900;
+.__skill_card_tittle {
+    @apply m-auto w-full justify-center text-center py-5;
+}
+.__skill_card_tittle h3{
+    @apply font-black w-[80%] m-auto;
+}
+.__skill_card_desc {
+    @apply flex rounded-b-2xl m-auto pb-14;
+}
+.__skill_card_desc p{
+    @apply text-xl w-[80%] m-auto text-center;
 }
 
 
@@ -94,8 +109,13 @@ body {
     font-size: 1.6rem;
     margin: 0 auto;
     padding: 0;
+    background-image: url('../images/patter_01.png');
 }
-  
+ #container{
+    background-color: #efefef;
+    width: 100%;
+    background-color: rgba(230,230,230,.8);
+ } 
 img {
     border: 0;
     padding: 0; 
@@ -148,7 +168,7 @@ main{
     display: inline-flex;
     content: "«";
     margin-right: 8px;
-    background-color: #E73724;
+    background-color: rgb(240 82 82 / var(--tw-text-opacity));
     font-size: 3rem;
     text-align: center;
     padding: 5px;
@@ -164,7 +184,7 @@ main{
     display: inline-flex;
     content: "»";
     margin-left: 8px;
-    background-color: #E73724;
+    background-color: rgb(240 82 82 / var(--tw-text-opacity));
     font-size: 3rem;
     text-align: center;
     padding: 5px;
@@ -184,7 +204,7 @@ main{
   }
   .custom-counter li {
     counter-increment: cero-count;
-    margin: 16px 0 ;
+    margin: 32px 0 ;
     position: relative;
     text-align: left;
     box-sizing: border-box;

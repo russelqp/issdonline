@@ -22,7 +22,7 @@ module.exports = {
         'yellow-issd': '#FFB611'
       },
       gridTemplateRows:{
-        '3':'200px 1fr 1fr'
+        '3':'repeat (3, 1fr)'
       }
     },
   },

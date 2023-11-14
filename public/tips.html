@@ -19,11 +19,11 @@
     <title>ISSDOnline 🥇 - Tips</title>
   </head>
   <body class="min-h-screen relative pb-20">
-    <container class="w-full m-auto">
+    <div id="container">
       <header class="lg:w-full md:relative bg-gray-300">
-        <div class="cont_header bg-red-issd/80 border-b-1 border-red-issd items-center xl:w-[1280px] m-auto w-full flex justify-between align-middle relative mb-0 left-0 right-0 top-0 bottom-0 h-12">
-          <div class="logo fixed h-12 items-center flex left-4 top-0 z-10  ease duration-[0.5s]"><a class="h-12" href="./" alt="Inico"> <span class="text-white font-bold text-3xl align-middle h-12">ISSDOnline</span></a></div>
-          <div class="icon-menu fixed h-12 items-center flex right-4  pointer z-10  ease duration-[0.5s] selection top-0 text-white">
+        <div class="cont_header bg-red-500 border-b-1 border-red-500  items-center xl:w-[1280px] m-auto w-full flex justify-between align-middle relative mb-0 left-0 right-0 top-0 bottom-0 h-12">
+          <div class="logo absolute h-12 items-center flex left-4 top-0 z-10  ease duration-[0.5s]"><a class="h-12" href="./" alt="Inico"> <span class="text-white font-bold text-3xl align-middle h-12">ISSDOnline</span></a></div>
+          <div class="icon-menu absolute h-12 items-center flex right-4  pointer z-10  ease duration-[0.5s] selection top-0 text-white">
             <svg class="icon icon-tabler icon-tabler-menu-2" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewbox="0 0 24 24" stroke-width="4" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M4 6l16 0"></path>
@@ -31,7 +31,7 @@
               <path d="M4 18l16 0"></path>
             </svg>
           </div>
-          <div class="icon-tache scale-0 fixed h-12 items-center flex right-4  pointer z-10  ease duration-[0.5s] selection top-0 text-white">
+          <div class="icon-tache scale-0 absolute h-12 items-center flex right-4  pointer z-10  ease duration-[0.5s] selection top-0 text-white">
             <svg class="icon icon-tabler icon-tabler-x" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewbox="0 0 24 24" stroke-width="4" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M18 6l-12 12"></path>
@@ -61,59 +61,58 @@
       <main>
         <section class="main__section">
           <article class="main__section__article"> 
-            <h1 class="font-bold 2xl">Mejora tus habilidades</h1>
-            <div class="content_skill_cards">
-              <div class="__skill_card">
-                <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
-                <div class="__skill_card_tittle">
-                  <h3>Aprende diferentes goles</h3>
-                </div>
-                <div class="__skill_card_desc">
-                  <p>Descripción del skill</p>
-                </div>
-              </div>
-              <div class="__skill_card">
-                <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
-                <div class="__skill_card_tittle">
-                  <h3>Aprende a Defender</h3>
-                </div>
-                <div class="__skill_card_desc">
-                  <p>Descripción del skill</p>
-                </div>
-              </div>
-              <div class="__skill_card">
-                <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
-                <div class="__skill_card_tittle">
-                  <h3>Aprende a manejar al GK</h3>
-                </div>
-                <div class="__skill_card_desc">
-                  <p>Descripción del skill</p>
-                </div>
-              </div>
-              <div class="__skill_card">
-                <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
-                <div class="__skill_card_tittle">
-                  <h3>Aprende a usar las Estrategias</h3>
-                </div>
-                <div class="__skill_card_desc">
-                  <p>Descripción del skill</p>
-                </div>
-              </div>
-              <div class="__skill_card">
-                <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
-                <div class="__skill_card_tittle">
-                  <h3>Tiros a balón parado</h3>
-                </div>
-                <div class="__skill_card_desc">
-                  <p>Descripción del skill</p>
-                </div>
-              </div>
-            </div>
+            <h1 class="font-black text-3xl mb-10">Mejora tus habilidades</h1>
+            <div class="content_skill_cards"><a href="">
+                <div class="__skill_card">
+                  <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
+                  <div class="__skill_card_tittle">
+                    <h3>Tipos de Goles</h3>
+                  </div>
+                  <div class="__skill_card_desc">
+                    <p>Aumenta tu arsenal de goles para tener más chances de anotar.</p>
+                  </div>
+                </div></a><a href="">
+                <div class="__skill_card">
+                  <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
+                  <div class="__skill_card_tittle">
+                    <h3> Mejora tu defensa</h3>
+                  </div>
+                  <div class="__skill_card_desc">
+                    <p>Algunos tips de ayuda para mejorar tu defensa y evitar que tu adversario pueda anotar.</p>
+                  </div>
+                </div></a><a href="">
+                <div class="__skill_card">
+                  <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
+                  <div class="__skill_card_tittle">
+                    <h3>Aprende a manejar al GK</h3>
+                  </div>
+                  <div class="__skill_card_desc">
+                    <p>Algunos consejos y explicación para sacarle provecho a tu GK y evitar algunos goles.</p>
+                  </div>
+                </div></a><a href="">
+                <div class="__skill_card">
+                  <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
+                  <div class="__skill_card_tittle">
+                    <h3>Aprende a usar las Estrategias</h3>
+                  </div>
+                  <div class="__skill_card_desc">
+                    <p>Explicación de como funcionan las estrategias,  que podrán ayudarte a crear oportunidades, abrirte por la cancha y sorprender a tu rivales. </p>
+                  </div>
+                </div></a><a href="">
+                <div class="__skill_card">
+                  <div class="__skill_card_img"><img src="./images/soccerball01.png" alt="Balon skill"/></div>
+                  <div class="__skill_card_tittle">
+                    <h3>Jugadas a balón parado</h3>
+                  </div>
+                  <div class="__skill_card_desc">
+                    <p>Aprende a anotar goles de tiros libres o generar goles desde tiros de esquina.</p>
+                  </div>
+                </div></a></div>
           </article>
         </section>
       </main>
-      <footer class="bottom-0 bg-red-issd text-center font-bold p-2 w-full absolute"><span>&copy; ISSDOnline.org</span></footer>
+      <footer class="bottom-0 bg-red-500 text-center p-2 w-full absolute"><span class="text-white">&copy; 2023 ISSDOnline.org</span></footer>
       <script src="./js/efects_gral.js"></script>
-    </container>
+    </div>
   </body>
 </html>

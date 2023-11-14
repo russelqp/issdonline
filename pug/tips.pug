@@ -30,48 +30,53 @@ html(lang="es")
         include inc/head.pug
         
     body(class="min-h-screen relative pb-20")
-        container(class="w-full m-auto")
+        #container
             include inc/header.pug
             main
                 section.main__section
                     article.main__section__article  
-                        h1(class="font-bold 2xl") Mejora tus habilidades
+                        h1(class="font-black text-3xl mb-10") Mejora tus habilidades
                         .content_skill_cards
-                            .__skill_card
-                                .__skill_card_img
-                                    img(src="./images/soccerball01.png", alt="Balon skill")
-                                .__skill_card_tittle
-                                    h3 Aprende diferentes goles
-                                .__skill_card_desc
-                                    p Descripción del skill
-                            .__skill_card
-                                .__skill_card_img
-                                    img(src="./images/soccerball01.png", alt="Balon skill")
-                                .__skill_card_tittle
-                                    h3 Aprende a Defender
-                                .__skill_card_desc
-                                    p Descripción del skill
-                            .__skill_card
-                                .__skill_card_img
-                                    img(src="./images/soccerball01.png", alt="Balon skill")
-                                .__skill_card_tittle
-                                    h3 Aprende a manejar al GK
-                                .__skill_card_desc
-                                    p Descripción del skill
-                            .__skill_card
-                                .__skill_card_img
-                                    img(src="./images/soccerball01.png", alt="Balon skill")
-                                .__skill_card_tittle
-                                    h3 Aprende a usar las Estrategias
-                                .__skill_card_desc
-                                    p Descripción del skill
-                            .__skill_card
-                                .__skill_card_img
-                                    img(src="./images/soccerball01.png", alt="Balon skill")
-                                .__skill_card_tittle
-                                    h3 Tiros a balón parado
-                                .__skill_card_desc
-                                    p Descripción del skill
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src="./images/soccerball01.png", alt="Balon skill")
+                                    .__skill_card_tittle
+                                        h3 Tipos de Goles
+                                    .__skill_card_desc
+                                        p Aumenta tu arsenal de goles para tener más chances de anotar.
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src="./images/soccerball01.png", alt="Balon skill")
+                                    .__skill_card_tittle
+                                        h3  Mejora tu defensa
+                                    .__skill_card_desc
+                                        p Algunos tips de ayuda para mejorar tu defensa y evitar que tu adversario pueda anotar.
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src="./images/soccerball01.png", alt="Balon skill")
+                                    .__skill_card_tittle
+                                        h3 Aprende a manejar al GK
+                                    .__skill_card_desc
+                                        p Algunos consejos y explicación para sacarle provecho a tu GK y evitar algunos goles.
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src="./images/soccerball01.png", alt="Balon skill")
+                                    .__skill_card_tittle
+                                        h3 Aprende a usar las Estrategias
+                                    .__skill_card_desc
+                                        p Explicación de como funcionan las estrategias,  que podrán ayudarte a crear oportunidades, abrirte por la cancha y sorprender a tu rivales. 
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src="./images/soccerball01.png", alt="Balon skill")
+                                    .__skill_card_tittle
+                                        h3 Jugadas a balón parado
+                                    .__skill_card_desc
+                                        p Aprende a anotar goles de tiros libres o generar goles desde tiros de esquina.
 
                             
             include inc/footer.pug
