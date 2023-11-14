@@ -29,7 +29,7 @@
 html(lang="es")
   head
     include inc/head.pug
-  body.relative 
+  body(class="min-h-screen relative pb-20")
     container.w-full.m-auto.py-10
       include inc/header.pug
       include inc/hero.pug
@@ -99,7 +99,7 @@ html(lang="es")
                     
 
 
-        section.section-main
+        section.section-main.hidden
           article.article-main
             h2.block.w-full ISSD News
             p.block.w-full Las noticias calientidas de la comunidad ISSD.

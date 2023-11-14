@@ -20,6 +20,9 @@ module.exports = {
       colors: {
         'red-issd': '#E73724',
         'yellow-issd': '#FFB611'
+      },
+      gridTemplateRows:{
+        '3':'200px 1fr 1fr'
       }
     },
   },
