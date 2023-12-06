@@ -76,10 +76,10 @@
     @apply grid grid-rows-3 bg-white rounded-2xl;
 }
 .__skill_card_img {
-    @apply bg-green-500 grid content-center justify-center h-[400px] m-auto w-full rounded-t-2xl;
+    @apply bg-green-500 grid content-center justify-center h-auto m-auto w-full rounded-t-2xl;
 }
 .__skill_card_img img{
-    @apply w-48 h-auto border-2;
+    @apply w-full h-auto border-2;
 }
 .__skill_card_tittle {
     @apply m-auto w-full justify-center text-center py-5;

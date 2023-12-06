@@ -1182,6 +1182,10 @@ input:checked + .toggle-bg {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2167,7 +2171,7 @@ input:checked + .toggle-bg {
 .__skill_card_img {
   margin: auto;
   display: grid;
-  height: 400px;
+  height: auto;
   width: 100%;
   align-content: center;
   justify-content: center;
@@ -2179,7 +2183,7 @@ input:checked + .toggle-bg {
 
 .__skill_card_img img {
   height: auto;
-  width: 12rem;
+  width: 100%;
   border-width: 2px;
 }
 
