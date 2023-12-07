@@ -1314,10 +1314,6 @@ input:checked + .toggle-bg {
   max-width: 80rem;
 }
 
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -2032,7 +2028,8 @@ input:checked + .toggle-bg {
 .boxmain .--box-h {
   margin: auto;
   margin-bottom: 1.5rem;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -2377,6 +2374,30 @@ main{
   font-weight: bold;
 }
 
+.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #f1d605;
+}
+
+/* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+
+.hero{
+  background-image: url('../images/ball_in_front.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
 .hover\:link-hover:hover{
   cursor: pointer;
   background-color:rgb(247, 60, 60);
@@ -2643,8 +2664,8 @@ main{
     display: flex;
   }
 
-  .md\:grid {
-    display: grid;
+  .md\:h-60 {
+    height: 15rem;
   }
 
   .md\:h-\[450px\] {
@@ -2701,5 +2722,3 @@ main{
     height: 24rem;
   }
 }
-
-

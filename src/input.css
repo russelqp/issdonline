@@ -40,7 +40,7 @@
     @apply px-6 py-4 rounded-b-2xl text-xl;
 }
 .boxmain .--box-h{
-    @apply text-2xl font-semibold m-auto mb-6 text-left text-white;
+    @apply text-2xl font-semibold m-auto mb-6 text-white flex justify-between;
 }
 .boxmain .--box-h:hover{
     @apply bg-green-500 text-center;
@@ -239,5 +239,26 @@ main{
     color: var(--primary-issd-red);
     font-weight: bold;
   }
+  .icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: #f1d605;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
 
-
+.hero{
+    background-image: url('../images/ball_in_front.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}

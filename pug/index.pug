@@ -30,6 +30,8 @@ html(lang="es")
   head
     include inc/head.pug
   body(class="min-h-screen relative pb-20")
+    include inc/icomoon-svg.pug
+
     #container
       include inc/header.pug
       include inc/hero.pug
@@ -48,20 +50,29 @@ html(lang="es")
               .--box-h
                 h3 ¿Cómo jugar ISSD  Online?
                 .star-icon
-                  img(src="./images/estrellita.png")
+                  svg.icon.icon-star-full
+                    use(xlink:href='#icon-star-full')
                   
               .--box-text
                 p(class="hidden md:flex") ¿Quieres saber como jugar en linea, qué programas necesitas, emuladores, etc? Aquí te explicamos como.
           a(class="btn_boxmain" href="tips.html")
             .boxmain
               .--box-h
-                h3 Tips 
+                h3 Tips
+                .star-icon
+                  svg.icon.icon-star-full
+                    use(xlink:href='#icon-star-full')
+              
               .--box-text
                 p(class="hidden md:flex") Te enseñamos a hacer algunas jugadas, como mejorar tu definición, tu defensa, manejar las estrategias.
           a(class="btn_boxmain" href="links.html")
             .boxmain
               .--box-h
-                h3 Ligas 
+                h3 Ligas
+                .star-icon
+                  svg.icon.icon-star-full
+                    use(xlink:href='#icon-star-full')
+                  
               .--box-text
                 p(class="hidden md:flex") Conoce diferentes ligas en las que puedes participar.
         section.section-main.hidden
