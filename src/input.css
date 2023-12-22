@@ -55,7 +55,7 @@
     @apply w-full p-2 md:p-6 content-center  justify-center;
 }
 .article-main {
-    @apply w-full text-left items-center gap-4 align-middle justify-center self-center p-4 m-auto bg-gray-300/50;
+    @apply w-full text-left items-center gap-4 align-middle justify-center self-center p-4 m-auto bg-white;
 }
 .is-active {
     @apply right-0;
@@ -224,12 +224,38 @@ main{
     text-align: center;
     box-shadow: 1px 1px 0 #999;
   }
-
+  .custom-counter-2 {
+    counter-reset: cero-count;
+    padding-left: 40px;
+    overflow: hidden;
+    clear: both;
+  }
+  .custom-counter-2 li {
+    counter-increment: cero-count;
+    margin: 32px 0 ;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+  }
+.custom-counter-2 li::before {
+    content: counter(cero-count);
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    color: #fff;
+    background-color: #ed0d14;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+  }
   .videotutorial-min{
     padding: 1rem;
     display: block;
     margin-top: 1rem;
-    width: 30%;
     display: inline-flex;
     min-width: 300px;
   }
@@ -247,6 +273,10 @@ main{
     stroke: currentColor;
     fill: currentColor;
     color: #f1d605;
+  }
+  ._video_container{
+    display: block;
+    width: 100%;
   }
   
   /* ==========================================
