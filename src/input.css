@@ -102,19 +102,20 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
   
 body {
     font-size: 1.6rem;
     margin: 0 auto;
     padding: 0;
-    background-image: url('../images/patter_01.png');
+    background-color: #ed0d14;
+    width: 100%;
 }
  #container{
     background-color: #efefef;
     width: 100%;
-    background-color: rgba(230,230,230,.8);
+    background-color: rgba(230,230,230,.9);
  } 
 img {
     border: 0;
