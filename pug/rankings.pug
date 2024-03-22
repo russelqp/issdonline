@@ -1,4 +1,5 @@
 //Variables js
+  
 
 //-var js_particles ="./js/particles.min.js";
 //- -var js_nasa ="./js/nasa.js";
@@ -33,35 +34,22 @@ html(lang="es")
             include inc/header.pug
             main
                 .section-main.block
-                    h1.block Rankings
+                    h1.block Omni Ranking
                     .article-main(class="overflow-hidden")
-                        h2 Copa ISSD PRO | Ranking julio 2023
-                        br
-                        span ► 11º COPA ISSD PRO: ITALIA ◄
-                        br
-                        span ►►► RANKING ◄◄◄
-                        br
-                        span ► CLASIFICACION FINAL ◄
-                        br
-                        b Campeon: [2]Vinny(ARG)** (20.00 USD)
-                        br
-                        b Sub-Campeon: [3]Webber S.E.P(BRA)** (10.00 USD)
-                        br
-                        b Tercer Lugar: [1]Daniel F(BRA)º (5.00 USD)
-                        br 
-                        b ► MEJOR ATAQUE / GOLEADOR ◄
-                        br
-                        span [3]Webber S.E.P(BRA)** [ 60 / 6 ] = 10
-                        br 
-                        b ► MEJOR DEFENSA ◄
-                        br 
-                        span [2]Vinny(ARG)** [ 20 / 5 ] = 4
-                        br 
-                        span  #[b ► RANKING (Explicacion):] http://copaissdpro.foroactivo.com/t2-ranking-explicacion
-                        br 
-                        span #[b ► TORNEO LINK:] https://www.todotorneos.com/torneo/torneosmain.php?torneo=343512&fbclid=IwAR211FTsmrKzwBtIpN6d9eDikVX0BNUkT4GU5v8HkZvWECulBG8rmUuZIXU
+                        h2 By Korke, Viny | Marzo 2024
+                        h3 br Ranking general 2020 - 2023
+                        
+                    #portada.article-main.w-full
+                        script.
+                            var s = document.createElement('script');
+                            s.setAttribute('type', 'module');
+                            s.src = 'js/ranking.js';
+                            document.getElementsByTagName("head")[0].appendChild(s)
 
-                        figure 
-                            img(src="./images/varios/ranking_julio2023_issdpro.jpg" alt="ranking copa issd pro julio 2023")
-                
-            include inc/footer.pug 
+                        //Conectar Json de firebase
+
+                        // Cargar Json
+
+
+                        //Vaciar datos en una tabla (ul li)
+            include inc/footer.pug

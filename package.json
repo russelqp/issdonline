@@ -25,6 +25,7 @@
     "fast-glob": "^3.3.1",
     "fastq": "^1.15.0",
     "fill-range": "^7.0.1",
+    "firebase": "^10.9.0",
     "flowbite": "^1.8.1",
     "fraction.js": "^4.2.0",
     "fs.realpath": "^1.0.0",

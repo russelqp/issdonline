@@ -122,7 +122,6 @@ img {
 }
 main{
     width: 100%;
-    margin-top: 2rem;
 }
 .shadow-menu{
     box-shadow: -2px 1px 3px 0.5px rgba(20,20,20,.6);
@@ -163,7 +162,18 @@ main{
 .quotaOpen::before{
     content:'';
 }
-
+.obs{
+    padding: 2rem;
+    background-color: #efefef;
+    box-sizing: border-box;
+    width: 90%;
+    display: block;
+    content: "Observaciones:  ";
+    margin: 0 auto;
+}
+.obs::before{
+    content: "Observaciones:  ";
+}
 .myq::before{
     display: inline-flex;
     content: "«";
@@ -291,4 +301,17 @@ main{
     background-image: url('../images/ball_in_front.jpg');
     background-repeat: no-repeat;
     background-position: left bottom;
+}
+.ul-reglas {
+    padding: 2rem;
+}
+.ul-reglas li {
+    counter-increment: cero-count;
+    margin: 32px 0 ;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+  }
+.ul-reglas li::before{
+    content: counter(cero-count)".";
 }
