@@ -33,13 +33,13 @@ html(lang="es")
         #container(class="min-h-screen")
             include inc/header.pug
             main
-                .section-main.block
-                    h1.block Omni Ranking
-                    .article-main(class="overflow-hidden")
+                section.main__section
+                    article.main__section__article(class="overflow-hidden")
+                        h1.block Omni Ranking
                         h2 By Korke, Viny | Marzo 2024
-                        h3 br Ranking general 2020 - 2023
+                        h3.text-lg #[b Ranking general 2020 - 2023]
                         
-                    #portada.article-main.w-full
+                    article#portada.main__section__article
                         script.
                             var s = document.createElement('script');
                             s.setAttribute('type', 'module');
@@ -52,4 +52,4 @@ html(lang="es")
 
 
                         //Vaciar datos en una tabla (ul li)
-            include inc/footer.pug
+        include inc/footer.pug

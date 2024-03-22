@@ -27,7 +27,7 @@ function createHTML(datos){
         </li>`;
         elementos.forEach(element => {
             if(element.POS <=10){
-                main_ranking+= `<li class="li_item lg:w-full grid grid-cols-4 justify-items-center border-1 border-blue-50 odd:bg-green-300 even:bg-green-400"><span>${element.POS}</span> <span>${element.ID}</span> <span>${element.NOME}</span> <span>${element.SCORE}</span>`;
+                main_ranking+= `<li class="li_item lg:w-full grid grid-cols-4 justify-items-center border-1 border-blue-50 odd:bg-green-300 even:bg-green-400"><span class="font-semibold">${element.POS}</span> <span>${element.ID}</span> <span class="font-semibold">${element.NOME}</span> <span class="font-semibold">${element.SCORE}</span>`;
             } else{
                 main_ranking+= `<li class="li_item lg:w-full grid grid-cols-4 justify-items-center odd:bg-gray-200  even:bg-gray-300 border-1 border-blue-50 bg-blue-300"> <span>${element.POS}</span> <span>${element.ID}</span> <span>${element.NOME}</span> <span>${element.SCORE}</span>`;
             }

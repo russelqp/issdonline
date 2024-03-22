@@ -1591,10 +1591,6 @@ input:checked + .toggle-bg {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300\/50 {
-  background-color: rgb(209 213 219 / 0.5);
-}
-
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1816,6 +1812,10 @@ input:checked + .toggle-bg {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -1976,8 +1976,9 @@ input:checked + .toggle-bg {
 
 /* Variables */
 
-.my-colors{
+:root{
   --primary-issd-red: rgb(247, 60, 60);
+  --red-base: rgb(240, 82, 82);
 }
 
 /*@applys*/
@@ -2022,7 +2023,7 @@ input:checked + .toggle-bg {
   max-width: 80rem;
   justify-content: center;
   align-self: center;
-  padding: 1.5rem;
+  padding: 0px;
   vertical-align: middle;
 }
 
@@ -2262,14 +2263,13 @@ body {
   font-size: 1.6rem;
   margin: 0 auto;
   padding: 0;
-  background-color: #ed0d14;
   width: 100%;
 }
 
 #container{
   background-color: #efefef;
   width: 100%;
-  background-color: rgba(230,230,230,.9);
+  background-color: rgba(230,230,230,.8);
 }
 
 img {
@@ -2347,7 +2347,7 @@ main{
   text-align: center;
   padding: 5px;
   vertical-align: middle;
-  color: #fff;
+  color: var(--red-base);
   font-family: Gordita, sans-serif;
   left: 0;
   position: absolute;
@@ -2364,7 +2364,7 @@ main{
   text-align: center;
   padding: 5px;
   vertical-align: middle;
-  color: #fff;
+  color: var(--red-base);
   font-family: Gordita, sans-serif;
   right: 0;
   position: absolute;

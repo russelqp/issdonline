@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 /* Variables */
-.my-colors{
+:root{
     --primary-issd-red: rgb(247, 60, 60);
+    --red-base: rgb(240, 82, 82);
 }
+
 
 @layer components {
     .link-hover{
@@ -31,7 +33,7 @@
     @apply w-[100px] h-[100px] ;
 }
 .welcome, .main__section{
-    @apply max-w-7xl align-middle justify-center self-center p-6 m-auto max-md:block max-md:p-1;
+    @apply max-w-7xl align-middle justify-center self-center p-0 m-auto max-md:block max-md:p-1;
 }
 .boxmain .--box-h{
     @apply bg-red-500 px-6 py-4 rounded-t-2xl;
@@ -109,13 +111,12 @@ body {
     font-size: 1.6rem;
     margin: 0 auto;
     padding: 0;
-    background-color: #ed0d14;
     width: 100%;
 }
  #container{
     background-color: #efefef;
     width: 100%;
-    background-color: rgba(230,230,230,.9);
+    background-color: rgba(230,230,230,.8);
  } 
 img {
     border: 0;
@@ -184,7 +185,7 @@ main{
     text-align: center;
     padding: 5px;
     vertical-align: middle;
-    color: #fff;
+    color: var(--red-base);
     font-family: Gordita, sans-serif;
     left: 0;
     position: absolute;
@@ -200,7 +201,7 @@ main{
     text-align: center;
     padding: 5px;
     vertical-align: middle;
-    color: #fff;
+    color: var(--red-base);
     font-family: Gordita, sans-serif;
     right: 0;
     position: absolute;
