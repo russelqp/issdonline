@@ -25,7 +25,7 @@ function la_url(){
         mi_url = mi_url_local;
        
     }else if(mi_host.includes(5500)){
-        mi_url = protocolo+barras+mi_host+"/public/";
+        mi_url = protocolo+barras+mi_host+"/public";
         
     }else{
         mi_url = mi_url_online;
