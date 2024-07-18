@@ -80,6 +80,12 @@
 .__skill_card_img {
     @apply bg-green-500 grid content-center justify-center h-auto m-auto w-full rounded-t-2xl;
 }
+.listado_ligas li {
+    @apply p-1 mb-4
+}
+.listado_ligas li a{
+    @apply text-green-500
+}
 .__skill_card_img img{
     @apply w-full h-auto border-2;
 }
@@ -96,6 +102,37 @@
     @apply text-xl w-[80%] m-auto text-center;
 }
 
+/*Card Videos tips*/
+.container_tips_cards{
+    @apply sm:grid lg:grid-cols-1 xl:grid-cols-1 gap-4 content-center w-fit m-auto;
+}
+.container_tips_cards a{
+    @apply transition-all
+}
+.container_tips_cards a:hover{
+    @apply scale-105
+}
+.__tip_card {
+    @apply grid grid-rows-3 bg-white rounded-2xl;
+}
+.__tip_card_img .__tip_card_video {
+    @apply bg-green-500 grid content-center justify-center h-auto m-auto w-full rounded-t-2xl;
+}
+.__tip_card_img img .__tip_card_video iframe{
+    @apply w-full h-auto border-2;
+}
+.__tip_card_tittle {
+    @apply m-auto w-full justify-center text-center py-5;
+}
+.__tip_card_tittle h3{
+    @apply font-black w-[80%] m-auto;
+}
+.__tip_card_desc {
+    @apply flex rounded-b-2xl m-auto pb-14;
+}
+.__tip_card_desc p{
+    @apply text-xl w-[80%] m-auto text-center;
+}
 
 /*Vainilla css*/
 /* html {

@@ -3,7 +3,7 @@
 //-var js_particles ="./js/particles.min.js";
 //- -var js_nasa ="./js/nasa.js";
 -var js_efects_gral = "./js/efects_gral.js";
-//- -var js_urls = "./js/uris_headers.js";
+-var js_urls = "./js/uris_headers.js";
 -var base_style = "./css/output.css";
 //- -var nasa_style = "./css/animations/nasa.css";
 
@@ -33,4 +33,27 @@ html(lang="es")
             include inc/header.pug
             main
                 h1(class="font-bold 2xl") Enlaces últiles
+                section.main__section
+                    article.main__section__article
+                        ul.listado_ligas
+                            li
+                                h3 Copa ISSD Pro
+                                h4 #[strong Formato:] Torneo
+                                p El torneo que reúne siempre el mayor nivel en cuanto a jugadores de ISSD. Comienza con un repechaje, fase de frupos y fase final.
+                                a(href="https://www.facebook.com/groups/456905675232194") Copa ISSD Pro
+                            li
+                                h3 Torneo para Todos
+                                h4 #[strong Formato:] Liga
+                                p Una liga que va en crecimiento, en la que tendrás la oportunidad de jugar contra más de 20 jugadores incluyendo los 3 mejores del ISSD.
+                                a(href="https://www.webcup.com.br/campeonato/torneio-para-todos-3-1708989216") Torneo para Todos
+                            li
+                                h3 Liga Equilibrium
+                                h4 #[strong Formato:] Torneos varios
+                                p Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.
+                                a(href="") Liga Equilibrium
+                            li
+                                h3 ISSSD Online Tournament
+                                h4 #[strong Formato:] Torneos varios
+                                p Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.
+                                a(href="") ISSSD Online Tournament
                 include inc/footer.pug

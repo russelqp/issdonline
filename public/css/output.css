@@ -1623,11 +1623,6 @@ input:checked + .toggle-bg {
   background-color: rgb(231 55 36 / 0.8);
 }
 
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
@@ -1657,10 +1652,6 @@ input:checked + .toggle-bg {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-none {
-  background-image: none;
 }
 
 .from-green-600 {
@@ -2227,6 +2218,16 @@ input:checked + .toggle-bg {
   background-color: rgb(14 159 110 / var(--tw-bg-opacity));
 }
 
+.listado_ligas li {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+}
+
+.listado_ligas li a {
+  --tw-text-opacity: 1;
+  color: rgb(14 159 110 / var(--tw-text-opacity));
+}
+
 .__skill_card_img img {
   height: auto;
   width: 100%;
@@ -2257,6 +2258,104 @@ input:checked + .toggle-bg {
 }
 
 .__skill_card_desc p {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/*Card Videos tips*/
+
+.container_tips_cards {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container_tips_cards {
+    display: grid;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container_tips_cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .container_tips_cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.container_tips_cards a {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.container_tips_cards a:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.__tip_card {
+  display: grid;
+  grid-template-rows: repeat (3, 1fr);
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.__tip_card_img .__tip_card_video {
+  margin: auto;
+  display: grid;
+  height: auto;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 159 110 / var(--tw-bg-opacity));
+}
+
+.__tip_card_img img .__tip_card_video iframe {
+  height: auto;
+  width: 100%;
+  border-width: 2px;
+}
+
+.__tip_card_tittle {
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+
+.__tip_card_tittle h3 {
+  margin: auto;
+  width: 80%;
+  font-weight: 900;
+}
+
+.__tip_card_desc {
+  margin: auto;
+  display: flex;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.__tip_card_desc p {
   margin: auto;
   width: 80%;
   text-align: center;
