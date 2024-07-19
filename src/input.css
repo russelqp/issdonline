@@ -83,16 +83,16 @@ p{
 
 /*Card skills*/
 .content_skill_cards{
-    @apply sm:grid lg:grid-cols-2 xl:grid-cols-3 gap-4 ;
+    @apply sm:grid lg:grid-cols-2 xl:grid-cols-3 gap-8 ;
 }
 .content_skill_cards a{
-    @apply transition-all
+    @apply transition-all my-4 inline-block
 }
 .content_skill_cards a:hover{
     @apply scale-105
 }
 .__skill_card {
-    @apply grid grid-rows-3 bg-white rounded-2xl;
+    @apply grid grid-rows-3 bg-white rounded-2xl gap-4;
 }
 .__skill_card_img {
     @apply bg-green-500 grid content-center justify-center h-auto m-auto w-full rounded-t-2xl;
@@ -154,7 +154,7 @@ p{
     @apply max-[480px]:w-full;
 }
 .__video iframe{
-    @apply max-[480px]:w-[100%] max-[480px]:h-[60%];
+    @apply max-[480px]:w-[100%] max-[540px]:w-[500px];
 }
 /*Vainilla css*/
 /* html {
