@@ -18,6 +18,12 @@
         padding-left: 10px
     }
 }
+p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.78;
+    overflow-wrap: normal;
+}
 
 /*@applys*/
 .btn_boxmain{
@@ -62,6 +68,17 @@
 .is-active {
     @apply right-0;
 }
+/**reglamento**/
+.__article--reglas{
+    @apply w-[900px] my-4 mx-auto;
+}
+.__article--reglas h2{
+    @apply text-3xl font-bold text-gray-700 my-4;
+}
+.__article--reglas p{
+    @apply text-2xl my-4;
+}
+
 
 
 /*Card skills*/
@@ -300,6 +317,32 @@ main{
     background-color: #ed0d14;
     text-align: center;
     box-shadow: 1px 1px 0 #999;
+  }
+  .custom-counter-3 {
+    counter-reset: cero-count;
+    padding-left: 50px;
+    overflow: hidden;
+    clear: both;
+  }
+  .custom-counter-3 li {
+    counter-increment: cero-count;
+    margin: 32px 0 ;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+  }
+.custom-counter-3 li::before {
+    content: counter(cero-count);
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 1px);
+    line-height: var(--size);
+    width: var(--size); 
+    height: var(--size);
+    top: 0;
+    color: #1a1a1a;
+    text-align: center;
   }
   .videotutorial-min{
     padding: 1rem;

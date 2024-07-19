@@ -1142,6 +1142,16 @@ input:checked + .toggle-bg {
   margin-bottom: 0.25rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1864,11 +1874,6 @@ input:checked + .toggle-bg {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -1987,6 +1992,13 @@ input:checked + .toggle-bg {
 :root{
   --primary-issd-red: rgb(247, 60, 60);
   --red-base: rgb(240, 82, 82);
+}
+
+p{
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.78;
+  overflow-wrap: normal;
 }
 
 /*@applys*/
@@ -2159,6 +2171,33 @@ input:checked + .toggle-bg {
 
 .is-active {
   right: 0px;
+}
+
+/**reglamento**/
+
+.__article--reglas {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+
+.__article--reglas h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.__article--reglas p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 /*Card skills*/
@@ -2548,6 +2587,35 @@ main{
   background-color: #ed0d14;
   text-align: center;
   box-shadow: 1px 1px 0 #999;
+}
+
+.custom-counter-3 {
+  counter-reset: cero-count;
+  padding-left: 50px;
+  overflow: hidden;
+  clear: both;
+}
+
+.custom-counter-3 li {
+  counter-increment: cero-count;
+  margin: 32px 0 ;
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.custom-counter-3 li::before {
+  content: counter(cero-count);
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 1px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  color: #1a1a1a;
+  text-align: center;
 }
 
 .videotutorial-min{
