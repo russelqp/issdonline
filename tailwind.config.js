@@ -26,6 +26,16 @@ module.exports = {
       }
     },
   },
+  screens: {
+    'xsm': '480px',
+    // => @media (min-width: 640px) { ... }
+
+    'xxsm': '320px',
+    // => @media (min-width: 1024px) { ... }
+
+    'desktop': '1280px',
+    // => @media (min-width: 1280px) { ... }
+  },
   plugins: [
     require('flowbite/plugin')
   ]

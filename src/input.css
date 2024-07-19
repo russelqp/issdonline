@@ -150,7 +150,12 @@ p{
 .__tip_card_desc p{
     @apply text-xl w-[80%] m-auto text-center;
 }
-
+.videotutorial-min{
+    @apply max-[480px]:w-full;
+}
+.__video iframe{
+    @apply max-[480px]:w-[100%] max-[480px]:h-[60%];
+}
 /*Vainilla css*/
 /* html {
     font-size: 62.5%; 
@@ -345,7 +350,7 @@ main{
     text-align: center;
   }
   .videotutorial-min{
-    padding: 1rem;
+    padding: 0;
     display: block;
     margin-top: 1rem;
     display: inline-flex;

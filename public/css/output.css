@@ -1585,6 +1585,11 @@ input:checked + .toggle-bg {
   background-color: rgb(164 202 254 / var(--tw-bg-opacity));
 }
 
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(118 169 250 / var(--tw-bg-opacity));
+}
+
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
@@ -2402,6 +2407,17 @@ p{
   line-height: 1.75rem;
 }
 
+@media (max-width: 480px) {
+  .videotutorial-min {
+    width: 100%;
+  }
+
+  .__video iframe {
+    height: 60%;
+    width: 100%;
+  }
+}
+
 /*Vainilla css*/
 
 /* html {
@@ -2619,7 +2635,7 @@ main{
 }
 
 .videotutorial-min{
-  padding: 1rem;
+  padding: 0;
   display: block;
   margin-top: 1rem;
   display: inline-flex;
