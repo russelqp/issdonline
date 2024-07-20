@@ -2429,6 +2429,101 @@ p{
   }
 }
 
+.lista_canales_usuarios {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .lista_canales_usuarios {
+    width: 900px;
+  }
+}
+
+.lista_canales_usuarios li {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 213 213 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .lista_canales_usuarios li {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lista_canales_usuarios li {
+    width: 100%;
+  }
+}
+
+.lista_canales_usuarios li .__container--img {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin: auto;
+}
+
+.lista_canales_usuarios li .__container--info {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+.lista_canales_usuarios li .__container--info h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.lista_canales_usuarios li .__container--info h2 span {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.lista_canales_usuarios li .__container--info h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.lista_canales_usuarios li .__container--info p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.lista_canales_usuarios li .__container--info .url_box {
+  margin: auto;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.lista_canales_usuarios li .__container--info span a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(118 169 250 / var(--tw-text-opacity));
+}
+
 /*Vainilla css*/
 
 /* html {

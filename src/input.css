@@ -156,6 +156,38 @@ p{
 .__video iframe{
     @apply max-[480px]:w-[100%] max-[540px]:w-[500px];
 }
+
+.lista_canales_usuarios{
+    @apply lg:w-[900px] block my-0 mx-auto p-8
+}
+.lista_canales_usuarios li{
+    @apply m-auto w-full lg:w-full bg-red-200 md:w-[800px]  my-4 grid grid-cols-4 gap-4 p-4 rounded-lg;
+}
+.lista_canales_usuarios li .__container--img{
+    @apply col-start-4 col-end-5  m-auto ;
+}
+.lista_canales_usuarios li .__container--info{
+    @apply col-start-1 col-end-4 m-auto w-full p-4;
+}
+
+.lista_canales_usuarios li .__container--info h2{
+    @apply text-2xl font-semibold;
+}
+.lista_canales_usuarios li .__container--info h2 span{
+    @apply text-gray-600 font-bold
+}
+.lista_canales_usuarios li .__container--info h3{
+    @apply text-xl;
+}
+.lista_canales_usuarios li .__container--info p{
+    @apply text-xl py-4;
+}
+.lista_canales_usuarios li .__container--info .url_box{
+    @apply text-gray-900 text-center font-medium m-auto block py-4;
+}
+.lista_canales_usuarios li .__container--info span a:hover{
+    @apply text-blue-400;
+}
 /*Vainilla css*/
 /* html {
     font-size: 62.5%; 

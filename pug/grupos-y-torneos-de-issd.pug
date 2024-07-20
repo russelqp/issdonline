@@ -1,0 +1,59 @@
+//Variables js
+
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "./js/efects_gral.js";
+-var js_urls = "./js/uris_headers.js";
+-var base_style = "./css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+
+//Variables para metadatos de la págiana actual
+-var meta_titlePage ="ISSDOnline 🥇 - Grupos de ISSD";
+-var meta_canonica = "https://www.issdonline.org/";
+-var meta_descPage = "▷ISSDOline grupos de whatsapp y facebook de ISSD";
+-var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
+-var meta_ogImage = "./images/issdeluxe_online_banner.jpg";
+//- -var style = "./css/style.css";
+//- -var css_nasa = "./css/animations/nasa.css";
+-var titulos = []
+-var descripciones = []
+//- mixin ejemplo(imagen, titulos_, descripciones, url_servicio)
+//-     .servicios__servicio
+//-         img(src="images/servicios/"+imagen alt=titulo_serv)
+//-         h3=titulos
+//-         p=descripciones
+//-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+<!DOCTYPE html>
+
+html(lang="es")
+    head
+        include inc/head.pug    
+    body(class="")
+        #container(class="min-h-screen")
+            include inc/header.pug
+            main
+                h1(class="font-bold 2xl") Grupos de ISSD
+                section.main__section
+                    article.main__section__article
+                        ul.listado_ligas
+                            li
+                                h3 Copa ISSD Pro
+                                h4 #[strong Formato:] Torneo
+                                p El torneo que reúne siempre el mayor nivel en cuanto a jugadores de ISSD. Comienza con un repechaje, fase de frupos y fase final.
+                                a(href="https://www.facebook.com/groups/456905675232194") Copa ISSD Pro
+                            li
+                                h3 Torneo para Todos
+                                h4 #[strong Formato:] Liga
+                                p Una liga que va en crecimiento, en la que tendrás la oportunidad de jugar contra más de 20 jugadores incluyendo los 3 mejores del ISSD.
+                                a(href="https://www.webcup.com.br/campeonato/torneio-para-todos-3-1708989216") Torneo para Todos
+                            li
+                                h3 ISSSD Online Tournament
+                                h4 #[strong Formato:] Torneos varios
+                                p Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.
+                                a(href="https://chat.whatsapp.com/FSvIjHsr3sG8Wc0H1uDimv") ISSSD Online Tournament
+                            li
+                                h3 Liga Equilibrium
+                                h4 #[strong Formato:] Torneos varios
+                                p Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.
+                                a(href="https://www.facebook.com/liga.equilibriumissd") Liga Equilibrium
+                include inc/footer.pug
