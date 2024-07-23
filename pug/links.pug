@@ -32,17 +32,21 @@ html(lang="es")
         #container(class="min-h-screen")
             include inc/header.pug
             main
-                h1(class="font-bold 2xl") Enlaces últiles
+                h1(class="font-bold text-3xl py-4") Enlaces últiles
                 section.main__section
                     article.main__section__article
-                        ul.listado_encales
-                            li
-                                h3 Grupos y torneos de ISSD
-                                p Aquí encontraras diferentes grupos de ISSD, algunos cuentan con gropos de whatsapp o facebook.
-                                a(href="./grupos-y-torneos-de-issd.html" title="grupos y torneos de issd") Visitar
-                            li
-                                h3 Canales de Jugadores de ISSD
-                                p Algunos canales y páginas de jugadores de ISSD, en donde podrás disfrutar de videos de sus partidos.
-                                a(href="./canales-de-jugadores-issd.html" title="canales de jugadores de issd") Visitar
+                        ul.lista_de_enlaces
+                            li(class="mb-4 w-[800px]")
+                                h2.py-2.font-bold Grupos y torneos de ISSD
+                                p.py-2 Aquí encontraras diferentes grupos de ISSD, algunos cuentan con grupos de whatsapp o facebook.
+                                p(class="p-2 w-4/5")
+                                    a(href="./grupos-y-torneos-de-issd.html" title="grupos y torneos de issd" class=".py-2 flex justify-end")
+                                        button(class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ") Visitar
+                            li(class="mb-4 w-[800px]")
+                                h2.py-2.font-bold Canales de Jugadores de ISSD
+                                p.py-2 Algunos canales y páginas de jugadores de ISSD, en donde podrás disfrutar de videos de sus partidos.
+                                p(class="p-2 w-4/5")
+                                    a(href="./canales-de-jugadores-issd.html" title="canales de jugadores de issd" class=".py-2 flex justify-end")
+                                        button(class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ") Visitar
 
                 include inc/footer.pug
