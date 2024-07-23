@@ -17,7 +17,7 @@ function la_url(){
     let src2 = document.querySelectorAll('src');
     
     //console.log(mi_url_local)
-    if(mi_path.includes("como-jugar-issd-online") || mi_path.includes("reglamento")|| mi_path.includes("enlaces")|| mi_path.includes("faq")|| mi_path.includes("issdnews")|| mi_path.includes("links")|| mi_path.includes("rankings")|| mi_path.includes("reglamento")|| mi_path.includes("tips")|| mi_path.includes("tutoriales")|| mi_path.includes("tips/tipos-de-goles")){
+    if(mi_path.includes("como-jugar-issd-online") || mi_path.includes("reglamento")|| mi_path.includes("enlaces")|| mi_path.includes("faq")|| mi_path.includes("issdnews")|| mi_path.includes("links")|| mi_path.includes("rankings")|| mi_path.includes("reglamento")|| mi_path.includes("tips")|| mi_path.includes("tutoriales")|| mi_path.includes("tips/tipos-de-goles")|| mi_path.includes("canales-de-jugadores-de-issd")){
         mi_url = mi_url_local;
         console.log(mi_url)
     }
