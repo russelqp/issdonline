@@ -1,3 +1,4 @@
+//rutas
 window.addEventListener('DOMContentLoaded', la_url);
 
 function la_url(){
@@ -16,19 +17,32 @@ function la_url(){
     let li = document.querySelectorAll('link');
     let src2 = document.querySelectorAll('src');
     
+/*  let ext = mi_path.split( ".", 1)
+    let url_sin_ext = mi_url + ext;
+    console.log(ext)
+    console.log("La ruta sería " + url_sin_ext) */
+    //window.location.assign(url_sin_ext);
+
+
     //console.log(mi_url_local)
+<<<<<<< HEAD
     if(mi_path.includes("como-jugar-issd-online") || mi_path.includes("reglamento")|| mi_path.includes("enlaces")|| mi_path.includes("faq")|| mi_path.includes("issdnews")|| mi_path.includes("links")|| mi_path.includes("rankings")|| mi_path.includes("reglamento")|| mi_path.includes("tips")|| mi_path.includes("tutoriales")|| mi_path.includes("tips/tipos-de-goles")|| mi_path.includes("canales-de-jugadores-de-issd")){
+=======
+/*     if(mi_path.includes("como-jugar-issd-online") || mi_path.includes("reglamento")|| mi_path.includes("enlaces")|| mi_path.includes("faq")|| mi_path.includes("issdnews")|| mi_path.includes("links")|| mi_path.includes("rankings")|| mi_path.includes("reglamento")|| mi_path.includes("tips")|| mi_path.includes("tutoriales")|| mi_path.includes("tips/tipos-de-goles")){
+>>>>>>> e715df0c9cb5dcf4461589ab95dce2fe8ed8c797
         mi_url = mi_url_local;
         console.log(mi_url)
-    }
+    } */
     if(mi_path.includes("issdonline")){
         mi_url = mi_url_local;
+        console.log(mi_url)
        
-    }else if(mi_host.includes(5500)){
-        mi_url = protocolo+barras+mi_host+"/public";
-        
+    }else if(mi_host.includes(5500) || mi_host.includes(5501)){
+        mi_url = protocolo+barras+mi_host+"/public"; 
+        console.log(mi_url)
     }else{
         mi_url = mi_url_online;
+        console.log(mi_url)
     }
         
    
@@ -44,10 +58,10 @@ function la_url(){
         var a_viejo = as[e].getAttribute("href");
         if(a_viejo.includes("http://") || a_viejo.includes("https://")){
             as[e].setAttribute('href', a_viejo)
-            //console.log(a_viejo)
+            console.log("incluye http " + a_viejo)
         }else{
             as[e].setAttribute('href', mi_url+'/'+a_viejo)
-            //console.log(a_viejo)
+            console.log("no incluye http " + a_viejo)
         }
     }
 
