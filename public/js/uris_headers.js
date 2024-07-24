@@ -23,12 +23,18 @@ function la_url(){
     }
     if(mi_path.includes("issdonline")){
         mi_url = mi_url_local;
+        console.log(mi_url)
        
-    }else if(mi_host.includes(5500)){
-        mi_url = protocolo+barras+mi_host+"/public";
-        
+    }else if(mi_host.includes(5500) || mi_host.includes(5501)){
+        mi_url = protocolo+barras+mi_host+"/public"; 
+        console.log(mi_url)
     }else{
         mi_url = mi_url_online;
+        let ext = mi_path.split( ".", 1)
+        let url_sin_ext = mi_host+ext;
+        console.log(ext)
+        console.log("La ruta sería " + url_sin_ext)
+        //window.location = mi_host;
     }
         
    
