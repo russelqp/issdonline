@@ -1,0 +1,32 @@
+
+
+#quitando extenciones#
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(.*)$ $1.php
+#RewriteRule ^([a-z]+)/?$ $1.php [NC]
+
+#RewriteRule ^([a-z]+)/?$ $1.php [NC]
+
+
+#RewriteRule ^(.*)$ $1.html [NC]
+#RewriteRule ^([a-z]+)/?$ $1.html [NC]
+
+RewriteRule ^([^/]+)/$ $1.html
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+RewriteRule ^([^/]+)$ $1.html
+RewriteRule ^([^/]+)/([^/]+)$ /$1/$2.html
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}/)$
+RewriteCond %{REQUEST_URI} /+[^.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+
+
+
+</IfModule>
