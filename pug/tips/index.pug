@@ -2,8 +2,8 @@
 
 //-var js_particles ="./js/particles.min.js";
 //- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "/js/uris_headers.js";
+-var js_efects_gral = "../js/efects_gral.js";
+-var js_urls = "../js/uris_headers.js";
 -var base_style = "./css/output.css";
 //- -var nasa_style = "./css/animations/nasa.css";
 
@@ -12,7 +12,7 @@
 -var meta_canonica = "https://www.issdonline.org/";
 -var meta_descPage = "▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes";
 -var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
--var meta_ogImage = "./images/issdeluxe_online_banner.jpg";
+-var meta_ogImage = "../images/issdeluxe_online_banner.jpg";
 //- -var style = "./css/style.css";
 //- -var css_nasa = "./css/animations/nasa.css";
 -var titulos = []
@@ -27,11 +27,11 @@
 
 html(lang="es")
     head
-        include inc/head.pug
+        include ../inc/head.pug
         
     body(class="")
         #container
-            include inc/header.pug
+            include ../inc/header.pug
             main
                 section.main__section
                     article.main__section__article  
@@ -79,4 +79,4 @@ html(lang="es")
                                         p Aprende a anotar goles de tiros libres o generar goles desde tiros de esquina.
 
                             
-        include inc/footer.pug
+        include ../inc/footer.pug
