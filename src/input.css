@@ -14,7 +14,7 @@
         cursor: pointer;
         background-color:rgb(247, 60, 60);
         display: flex;
-        width: 100%;
+        width: 100%; 
         padding-left: 10px
     }
 }
@@ -183,11 +183,27 @@ p{
     @apply text-xl py-4;
 }
 .lista_canales_usuarios li .__container--info .url_box{
-    @apply text-gray-900 text-center font-medium m-auto block py-4;
+    @apply text-gray-900 text-left font-medium m-auto block py-2;
 }
 .lista_canales_usuarios li .__container--info span a:hover{
     @apply text-blue-400;
 }
+.lista_de_enlaces{
+    @apply w-full mx-0 my-auto ;
+}
+.lista_de_enlaces li{
+    @apply max-lg:block border-0 bg-slate-100 rounded-lg ease-in-out duration-300 shadow-lg shadow-yellow-200/50 mb-4 w-full;
+}
+.lista_de_enlaces li:hover{
+    @apply scale-105;
+}
+.lista_de_enlaces li a{
+    @apply p-8 w-full flex;
+}
+.lista_de_enlaces li a .box_button{
+    @apply py-2 w-full grid grid-cols-2;
+}
+
 /*Vainilla css*/
 /* html {
     font-size: 62.5%; 
