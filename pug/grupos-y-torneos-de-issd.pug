@@ -23,6 +23,24 @@
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+
+//variables para canales de ISSD
+-var nombre_grupo = ["Copa ISSD Pro", "Torneo Para Todos ISSD", "ISSSD Online Tournament", "Liga Equilibrium", "Copa ISSDeluxe", "ISSD Reanimation", "Copa ISSnestalgia Deluxe"];
+-var autor_grupo = ["Mágico", "Luchoag", "Martins", "Wagner", "Pilo", "NASK", "Viny"];
+-var formato_grupo = ["Torneo","Liga Larga","Torneos","Torneos","Varios","Torneos y Liga","Torneo"];
+-var desc_grupo = ["El torneo que reúne siempre el mayor nivel en cuanto a jugadores de ISSD. Comienza con un repechaje, fase de frupos y fase final.","Una liga que va en crecimiento, con ya 3 ediciones, en la que tendrás la oportunidad de jugar contra más de 20 jugadores incluyendo los 3 mejores del ISSD.", "Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.", "Cuenta con grupo de whatsapp y página de facebook, tendrás la oportunidad de competir en los distintos torneos que se realizan.", "Ua comunidad que ofrece torneos de diferentes formatos", "Una comunidad que presenta competencias en formato de liga y torneos.", "De los grupos más nuevos pero con torneos de gran competitividad"];
+-var url_1_grupo = ["https://www.facebook.com/groups/456905675232194","https://www.webcup.com.br/campeonato/torneio-para-todos-3-1708989216","https://chat.whatsapp.com/FSvIjHsr3sG8Wc0H1uDimv","https://www.facebook.com/liga.equilibriumissd","https://www.facebook.com/groups/CopaISSDeluxe/","http://facebook.com/groups/issd.reanimation",""];
+-var img_grupo = [];
+
+mixin liga(nombre_grupo, autor_grupo, formato_grupo, desc_grupo, url_1_grupo)
+    li
+        h3=nombre_grupo
+        h4=autor_grupo
+        h4=formato_grupo
+        p=desc_grupo
+        a(href=url_1_grupo title=nombre_grupo) #{ nombre_grupo }
+
+
 <!DOCTYPE html>
 
 html(lang="es")
@@ -36,24 +54,8 @@ html(lang="es")
                 section.main__section
                     article.main__section__article
                         ul.listado_ligas
-                            li
-                                h3 Copa ISSD Pro
-                                h4 #[strong Formato:] Torneo
-                                p El torneo que reúne siempre el mayor nivel en cuanto a jugadores de ISSD. Comienza con un repechaje, fase de frupos y fase final.
-                                a(href="https://www.facebook.com/groups/456905675232194") Copa ISSD Pro
-                            li
-                                h3 Torneo para Todos
-                                h4 #[strong Formato:] Liga
-                                p Una liga que va en crecimiento, en la que tendrás la oportunidad de jugar contra más de 20 jugadores incluyendo los 3 mejores del ISSD.
-                                a(href="https://www.webcup.com.br/campeonato/torneio-para-todos-3-1708989216") Torneo para Todos
-                            li
-                                h3 ISSSD Online Tournament
-                                h4 #[strong Formato:] Torneos varios
-                                p Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.
-                                a(href="https://chat.whatsapp.com/FSvIjHsr3sG8Wc0H1uDimv") ISSSD Online Tournament
-                            li
-                                h3 Liga Equilibrium
-                                h4 #[strong Formato:] Torneos varios
-                                p Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.
-                                a(href="https://www.facebook.com/liga.equilibriumissd") Liga Equilibrium
-                include inc/footer.pug
+                            -for (var i=0; i<6; i++)
+                                +liga(nombre_grupo[i], autor_grupo[i], formato_grupo[i], desc_grupo[i], url_1_grupo[ni])
+
+                            
+        include inc/footer.pug
