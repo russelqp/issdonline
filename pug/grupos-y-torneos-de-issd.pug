@@ -38,7 +38,7 @@ mixin liga(nombre_grupo, autor_grupo, formato_grupo, desc_grupo, url_1_grupo)
         h4=autor_grupo
         h4=formato_grupo
         p=desc_grupo
-        a(href=url_1_grupo title=nombre_grupo) #{ nombre_grupo }
+        a(href=url_1_grupo title=nombre_grupo rel="nofollow") #{ nombre_grupo }
 
 
 <!DOCTYPE html>
@@ -50,8 +50,9 @@ html(lang="es")
         #container(class="min-h-screen")
             include inc/header.pug
             main
-                h1(class="font-bold 2xl") Grupos de ISSD
+                
                 section.main__section
+                    h1(class="font-bold 2xl") Grupos y Torneos de ISSD
                     article.main__section__article
                         ul.listado_ligas
                             -for (var i=0; i<6; i++)

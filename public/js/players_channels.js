@@ -32,6 +32,7 @@
                     var a_ico_f = document.createElement('a')
                     a_ico_f.setAttribute('href', redes[e]);
                     a_ico_f.setAttribute('title', "Facebook Channel");
+                    a_ico_f.setAttribute('rel', "nofollow");
                     a_ico_f.classList.add('icon-facebook');
                     a_ico_f.innerHTML = svg_icon_facebook2;
                     clase_icon.appendChild(a_ico_f);
@@ -40,6 +41,7 @@
                     var a_ico_y = document.createElement('a')
                     a_ico_y.setAttribute("href", redes[e]);
                     a_ico_y.setAttribute('title', "Youtube Channel");
+                    a_ico_y.setAttribute('rel', "nofollow");
                     a_ico_y.classList.add('icon-youtube');
                     a_ico_y.innerHTML = svg_icon_youtube;
                     clase_icon.appendChild(a_ico_y);
@@ -49,6 +51,7 @@
                     var a_ico_t = document.createElement('a')
                     a_ico_t.setAttribute("href", redes[e]);
                     a_ico_t.setAttribute('title', "Twitch Channel");
+                    a_ico_t.setAttribute('rel', "nofollow");
                     a_ico_t.classList.add('icon-twitch');
                     a_ico_t.innerHTML = svg_icon_twitch;
                     clase_icon.appendChild(a_ico_t);

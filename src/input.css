@@ -120,8 +120,8 @@ p{
 }
 
 /*Card Videos tips*/
-.container_tips_cards{
-    @apply sm:grid lg:grid-cols-1 xl:grid-cols-1 gap-4 content-center w-fit m-auto;
+.container_tips_cards, .content_videotutoriales{
+    @apply sm:grid lg:grid-cols-3 xl:grid-cols-3 gap-4 content-center m-auto;
 }
 .container_tips_cards a{
     @apply transition-all
@@ -150,12 +150,8 @@ p{
 .__tip_card_desc p{
     @apply text-xl w-[80%] m-auto text-center;
 }
-.videotutorial-min{
-    @apply max-[480px]:w-full;
-}
-.__video iframe{
-    @apply max-[480px]:w-[100%] max-[540px]:w-[500px];
-}
+
+
 
 .lista_canales_usuarios{
     @apply lg:w-[900px] block my-0 mx-auto p-8
@@ -419,7 +415,6 @@ main{
     display: block;
     margin-top: 1rem;
     display: inline-flex;
-    min-width: 300px;
   }
   .title-videotutorial{
     font-size: 1.2rem;
@@ -441,6 +436,10 @@ main{
     width: 100%;
   }
   
+  .__player{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
   .icon2 {
     display: inline-block;
     width: 1em;
