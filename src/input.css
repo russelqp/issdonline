@@ -203,6 +203,23 @@ p{
 .lista_de_enlaces li a .box_button{
     @apply py-2 w-full grid grid-cols-2;
 }
+.__iconos div{
+    @apply flex;
+}
+.__iconos div a{
+    @apply my-0 mx-5;
+}
+.__iconos div a .icon-youtube{
+    @apply text-[#c4302b];
+}
+.__iconos div a .icon-facebook2{
+    @apply text-[#3b5998];
+}
+.__iconos div a .icon-twitch{
+    @apply text-[#6441a5];
+}
+
+
 
 /*Vainilla css*/
 /* html {
@@ -417,13 +434,34 @@ main{
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    color: #f1d605;
+    color: #fff;
   }
   ._video_container{
     display: block;
     width: 100%;
   }
   
+  .icon2 {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-images {
+    width: 1.125em;
+  }
+
   /* ==========================================
   Single-colored icons can be modified like so:
   .icon-name {
@@ -450,3 +488,17 @@ main{
 .ul-reglas li::before{
     content: counter(cero-count)".";
 }
+.icon-facebook::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Step 2: Reference Individual Icons */
+.login-facebook::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+  }

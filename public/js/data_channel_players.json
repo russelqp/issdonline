@@ -21,7 +21,7 @@
             "nick_player" : ["Korke"],
             "presentacion_player" : "El mejor de mi barrio en ISSD",
             "bio_player" : "Soy de Brasil",
-            "redes_player" : ["https://www.facebook.com/projetorato"],
+            "redes_player" : ["https://www.facebook.com/projetorato", "https://www.twitch.tv/ratoproject"],
             "img_player" : "./images/avatar_issd.png"
         },
         {
@@ -29,9 +29,46 @@
             "nick_player" : ["Darkreich"],
             "presentacion_player" : "El mejor de mi barrio en ISSD",
             "bio_player" : "Soy de Brasil",
-            "redes_player" : ["https://www.twitch.tv/darkreich91/"],
+            "redes_player" : ["https://www.twitch.tv/darkreich91/", "https://www.youtube.com/@darkreich7011"],
             "img_player" : "./images/avatar_issd.png"
-        }  
+        },
+        {
+            "nombre_player" : "Oscar Jaen",
+            "nick_player" : ["El gran Papo"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Costa Rica",
+            "redes_player" : ["https://www.youtube.com/@oscarjaen2335/videos"],
+            "img_player" : "./images/avatar_issd.png"
+        },
+        {
+            "nombre_player" : "Ari Júnior",
+            "nick_player" : ["Arijunino"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Brasil",
+            "redes_player" : ["https://www.facebook.com/aristides.junior.560/videos"],
+            "img_player" : "./images/avatar_issd.png"
+        }
+        ,
+        {
+            "nombre_player" : "Webber",
+            "nick_player" : ["SEP Webber"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Brasil",
+            "redes_player" : ["https://www.youtube.com/@webber_sep"],
+            "img_player" : "./images/avatar_issd.png"
+        }
+        ,
+        {
+            "nombre_player" : "Daniel",
+            "nick_player" : ["DN"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Brasil",
+            "redes_player" : ["https://www.youtube.com/@Dn07movies"],
+            "img_player" : "./images/avatar_issd.png"
+        }
     ]
 }
+
+
+
 

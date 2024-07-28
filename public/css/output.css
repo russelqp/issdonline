@@ -2582,6 +2582,32 @@ p{
   padding-bottom: 0.5rem;
 }
 
+.__iconos div {
+  display: flex;
+}
+
+.__iconos div a {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.__iconos div a .icon-youtube {
+  --tw-text-opacity: 1;
+  color: rgb(196 48 43 / var(--tw-text-opacity));
+}
+
+.__iconos div a .icon-facebook2 {
+  --tw-text-opacity: 1;
+  color: rgb(59 89 152 / var(--tw-text-opacity));
+}
+
+.__iconos div a .icon-twitch {
+  --tw-text-opacity: 1;
+  color: rgb(100 65 165 / var(--tw-text-opacity));
+}
+
 /*Vainilla css*/
 
 /* html {
@@ -2820,12 +2846,33 @@ main{
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  color: #f1d605;
+  color: #fff;
 }
 
 ._video_container{
   display: block;
   width: 100%;
+}
+
+.icon2 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+
+.icon-images {
+  width: 1.125em;
 }
 
 /* ==========================================
@@ -2856,6 +2903,22 @@ main{
 
 .ul-reglas li::before{
   content: counter(cero-count)".";
+}
+
+.icon-facebook::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Step 2: Reference Individual Icons */
+
+.login-facebook::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
 }
 
 .hover\:link-hover:hover{
