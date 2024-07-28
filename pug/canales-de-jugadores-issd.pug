@@ -18,13 +18,24 @@
 //- -var css_nasa = "./css/animations/nasa.css";
 -var titulos = []
 -var descripciones = []
+
+//MIXIN CANAL DE PLAYER
 //- mixin ejemplo(imagen, titulos_, descripciones, url_servicio)
 //-     .servicios__servicio
 //-         img(src="images/servicios/"+imagen alt=titulo_serv)
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+
+//- Carga Json
+
+    
+    
+
+
+
 <!DOCTYPE html>
+
 
 html(lang="es")
     head
@@ -38,62 +49,9 @@ html(lang="es")
                         h1(class="font-black text-3xl mb-10") Canales de jugadores de ISSD
 
                         ul.lista_canales_usuarios
-                            li
-                                .__container--info
-                                    h2 Hola, yo soy #[span Faust]
-                                    h3 El mejor de mi barrio en ISSD
-                                    p Un poco de aquí y de allá.
-                                    span.url_box 
-                                        a(href="https://www.youtube.com/@ruztin80s" alt="canal youtube ruztin80s") Youtube Channel
-                                    span.url_box 
-                                        a(href="https://www.facebook.com/ruztin80s" alt="pagina facebook rruztin80s") Facebook Channel
-                                .__container--img
-                                    figure
-                                        img(src="./images/avatar_issd.png", width="100" height="130" alt="avatar_jugador_issd")
-                                
-                            li
-                                .__container--info
-                                    h2 Hola, yo soy #[span Nick Fury]
-                                    h3 El mejor de mi barrio en ISSD
-                                    p Un poco de aquí y de allá.
-                                    span.url_box 
-                                        a(href="") www.issdonline.org
-                                .__container--img
-                                    figure
-                                        img(src="./images/avatar_issd.png", width="100" height="130" alt="avatar_jugador_issd")
-                            
-                            li
-                                .__container--info
-                                    h2 Hola, yo soy #[span Nick Fury]
-                                    h3 El mejor de mi barrio en ISSD
-                                    p Un poco de aquí y de allá.
-                                    span.url_box 
-                                        a(href="") www.issdonline.org
-                                .__container--img
-                                    figure
-                                        img(src="./images/avatar_issd.png", width="100" height="130" alt="avatar_jugador_issd")
-                            
-                            li
-                                .__container--info
-                                    h2 Hola, yo soy #[span Nick Fury]
-                                    h3 El mejor de mi barrio en ISSD
-                                    p Un poco de aquí y de allá.
-                                    span.url_box 
-                                        a(href="") www.issdonline.org
-                                .__container--img
-                                    figure
-                                        img(src="./images/avatar_issd.png", width="100" height="130" alt="avatar_jugador_issd")
-                            
-                            li
-                                .__container--info
-                                    h2 Hola, yo soy #[span Nick Fury]
-                                    h3 El mejor de mi barrio en ISSD
-                                    p Un poco de aquí y de allá.
-                                    span.url_box 
-                                        a(href="") www.issdonline.org
-                                .__container--img
-                                    figure
-                                        img(src="./images/avatar_issd.png", width="100" height="130" alt="avatar_jugador_issd")
 
 
+        script(src="js/players_channels.js")
         include inc/footer.pug
+
+                

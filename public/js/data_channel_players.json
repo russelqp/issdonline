@@ -1,0 +1,37 @@
+{
+    "channels_player":[
+        {
+            "nombre_player" : "Russel",
+            "nick_player" : ["Faust", "Ruztin80s"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de México, juego desde el 2021, aunque también jugue en los tiempos de Gamersco.",
+            "redes_player" : ["https://www.youtube.com/@ruztin80s", "https://www.facebook.com/ruztin80s"],
+            "img_player" : "./images/avatar_issd.png"
+        },
+        {
+            "nombre_player" : "Vinicius",
+            "nick_player" : ["Vinny"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Soy de Brasil",
+            "redes_player" : ["https://www.youtube.com/@TimaoVinny1"],
+            "img_player" : "./images/avatar_issd.png"
+        },
+        {
+            "nombre_player" : "Jorge",
+            "nick_player" : ["Korke"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Brasil",
+            "redes_player" : ["https://www.facebook.com/projetorato"],
+            "img_player" : "./images/avatar_issd.png"
+        },
+        {
+            "nombre_player" : "Angelo",
+            "nick_player" : ["Darkreich"],
+            "presentacion_player" : "El mejor de mi barrio en ISSD",
+            "bio_player" : "Soy de Brasil",
+            "redes_player" : ["https://www.twitch.tv/darkreich91/"],
+            "img_player" : "./images/avatar_issd.png"
+        }  
+    ]
+}
+
