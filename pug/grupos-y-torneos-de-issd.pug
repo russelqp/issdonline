@@ -26,19 +26,23 @@
 
 //variables para canales de ISSD
 -var nombre_grupo = ["Copa ISSD Pro", "Torneo Para Todos ISSD", "ISSSD Online Tournament", "Liga Equilibrium", "Copa ISSDeluxe", "ISSD Reanimation", "Copa ISSnestalgia Deluxe"];
--var autor_grupo = ["Mágico", "Luchoag", "Martins", "Wagner", "Pilo", "NASK", "Viny"];
+-var autor_grupo = ["Mágico", "Luchoag", "Martins", "Wagner", "Pilo", "NASK", "Vinny"];
 -var formato_grupo = ["Torneo","Liga Larga","Torneos","Torneos","Varios","Torneos y Liga","Torneo"];
 -var desc_grupo = ["El torneo que reúne siempre el mayor nivel en cuanto a jugadores de ISSD. Comienza con un repechaje, fase de grupos y fase final.","Una liga que va en crecimiento, con ya 3 ediciones, en la que tendrás la oportunidad de jugar contra más de 20 jugadores incluyendo los 3 mejores del ISSD.", "Un grupo de whatsapp en la cuál tendrás la oportunidad de competir en los distintos torneos que se realizan.", "Cuenta con grupo de whatsapp y página de facebook, tendrás la oportunidad de competir en los distintos torneos que se realizan.", "Ua comunidad que ofrece torneos de diferentes formatos", "Una comunidad que presenta competencias en formato de liga y torneos.", "De los grupos más nuevos pero con torneos de gran competitividad"];
--var url_1_grupo = ["https://www.facebook.com/groups/456905675232194","https://www.webcup.com.br/campeonato/torneio-para-todos-3-1708989216","https://chat.whatsapp.com/FSvIjHsr3sG8Wc0H1uDimv","https://www.facebook.com/liga.equilibriumissd","https://www.facebook.com/groups/CopaISSDeluxe/","http://facebook.com/groups/issd.reanimation",""];
+-var url_1_grupo = ["https://www.facebook.com/groups/456905675232194","https://www.webcup.com.br/campeonato/torneio-para-todos-3-1708989216","https://chat.whatsapp.com/FSvIjHsr3sG8Wc0H1uDimv","https://www.facebook.com/liga.equilibriumissd","https://www.facebook.com/groups/CopaISSDeluxe/","http://facebook.com/groups/issd.reanimation","https://chat.whatsapp.com/CidAXzil4HzHvO5kCPSdb6"];
 -var img_grupo = [];
 
 mixin liga(nombre_grupo, autor_grupo, formato_grupo, desc_grupo, url_1_grupo)
-    li
-        h3=nombre_grupo
-        h4=autor_grupo
-        h4=formato_grupo
-        p=desc_grupo
-        a(href=url_1_grupo title=nombre_grupo rel="nofollow") #{ nombre_grupo }
+    li.li_ligas_torneos
+        ._data
+            h3=nombre_grupo
+            h4=autor_grupo
+            h4=formato_grupo
+            p=desc_grupo
+            a(href=url_1_grupo title=nombre_grupo rel="nofollow") #{ nombre_grupo }
+        ._img
+            figure
+                img(src="./images/copa_gamer_300.jpg" alt="imagen copa virtual")
 
 
 <!DOCTYPE html>
@@ -52,11 +56,11 @@ html(lang="es")
             main
                 
                 section.main__section
-                    h1(class="font-bold 2xl") Grupos y Torneos de ISSD
+                    h1(class="font-bold 2xl my-6") Grupos y Torneos de ISSD
                     article.main__section__article
                         ul.listado_ligas
-                            -for (var i=0; i<6; i++)
-                                +liga(nombre_grupo[i], autor_grupo[i], formato_grupo[i], desc_grupo[i], url_1_grupo[i])
+                            -for (var i=0; i<7; i++)
+                                +liga(nombre_grupo[i], "Organizador: " + autor_grupo[i], "Formato: " + formato_grupo[i], desc_grupo[i], url_1_grupo[i])
 
                             
         include inc/footer.pug

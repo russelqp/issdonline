@@ -1142,19 +1142,24 @@ input:checked + .toggle-bg {
   margin-bottom: 0.25rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .mb-0 {
@@ -2277,7 +2282,6 @@ p{
 
 .listado_ligas li {
   margin-bottom: 1rem;
-  padding: 0.25rem;
 }
 
 .listado_ligas li a {
@@ -2587,6 +2591,51 @@ p{
 .__iconos div a .icon-twitch {
   --tw-text-opacity: 1;
   color: rgb(100 65 165 / var(--tw-text-opacity));
+}
+
+.li_ligas_torneos {
+  width: 100%;
+  grid-template-columns: 60% auto;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .li_ligas_torneos {
+    display: grid;
+  }
+}
+
+.li_ligas_torneos ._data {
+  margin: 0px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.li_ligas_torneos ._data h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.li_ligas_torneos ._img, .li_ligas_torneos ._img figure, .li_ligas_torneos ._img figure img {
+  margin: 0px;
+  display: flex;
+  width: 100%;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .li_ligas_torneos ._img, .li_ligas_torneos ._img figure, .li_ligas_torneos ._img figure img {
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 /*Vainilla css*/
