@@ -70,7 +70,7 @@ p{
 }
 /**reglamento**/
 .__article--reglas{
-    @apply w-[900px] my-4 mx-auto;
+    @apply max-w-[900px] my-4 mx-auto w-full;
 }
 .__article--reglas h2{
     @apply text-3xl font-bold text-gray-700 my-4;
