@@ -31,14 +31,14 @@ function la_url(){
     } */
     if(mi_path.includes("issdonline")||mi_path.includes("public")){
         mi_url = mi_url_local;
-        console.log("mi url con issdonline es " + mi_url)
+        //console.log("mi url con issdonline es " + mi_url)
        
     }else if(mi_host.includes(5500) || mi_host.includes(5501)){
         mi_url = protocolo+barras+mi_host+ "/public"; 
-        console.log("mi url con 5500 es " + mi_url)
+        //console.log("mi url con 5500 es " + mi_url)
     }else{
         mi_url = mi_url_online;
-        console.log("mi url con online es" + mi_url)
+        //console.log("mi url con online es" + mi_url)
     }
         
    
@@ -47,11 +47,11 @@ function la_url(){
         var src_viejo = imgs[i].getAttribute("src");
         if(src_viejo.includes("http://") || src_viejo.includes("https://")){
             imgs[i].setAttribute('src', +src_viejo)
-            console.log("imagen incluye http " + "host viejo es " +src_viejo)
-            console.log("total de imagenes " + imgs.length)
+            //console.log("imagen incluye http " + "host viejo es " +src_viejo)
+            //console.log("total de imagenes " + imgs.length)
         }else{
             imgs[i].setAttribute('src', mi_url+'/'+src_viejo)
-            console.log("imagen no incluye http " + "host viejo es " + mi_url+'/'+src_viejo)
+           // console.log("imagen no incluye http " + "host viejo es " + mi_url+'/'+src_viejo)
         }
     }
 
@@ -59,10 +59,10 @@ function la_url(){
         var a_viejo = as[e].getAttribute("href");
         if(a_viejo.includes("http://") || a_viejo.includes("https://")){
             as[e].setAttribute('href', a_viejo)
-            console.log("incluye http " + "host viejo es " +  a_viejo)
+           // console.log("incluye http " + "host viejo es " +  a_viejo)
         }else{
             as[e].setAttribute('href', mi_url+'/'+a_viejo)
-            console.log("no incluye http " + "host viejo es " + a_viejo)
+            //console.log("no incluye http " + "host viejo es " + a_viejo)
         }
     }
 
@@ -71,10 +71,10 @@ function la_url(){
             var s_viejo = sc[s].getAttribute("src");
             if(s_viejo.includes("http://") || s_viejo.includes("https://")){
                 sc[s].setAttribute('src', s_viejo)
-                console.log("hola sc incluye http/ es " + s_viejo)
+                //console.log("hola sc incluye http/ es " + s_viejo)
             }else{
                 sc[s].setAttribute('src', mi_url+'/'+s_viejo)
-                console.log("hola sc NO incluye http/ es " + s_viejo)
+               // console.log("hola sc NO incluye http/ es " + s_viejo)
             }
         }  
     }

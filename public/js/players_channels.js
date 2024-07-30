@@ -57,7 +57,7 @@
                     clase_icon.appendChild(a_ico_t);
                    
                 }
-                console.log("se encontraron "+redes.length+" redes")
+                //console.log("se encontraron "+redes.length+" redes")
                 
             }
             return clase_icon.outerHTML;
