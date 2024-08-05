@@ -1178,12 +1178,20 @@ input:checked + .toggle-bg {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mt-10 {
@@ -2428,7 +2436,6 @@ p{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding: 2rem;
 }
 
 @media (min-width: 1024px) {
@@ -2443,12 +2450,24 @@ p{
   margin-bottom: 1rem;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(251 213 213 / var(--tw-bg-opacity));
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .lista_canales_usuarios li {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2464,23 +2483,47 @@ p{
 }
 
 .lista_canales_usuarios li .__container--img {
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-row-start: 1;
   margin: auto;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .lista_canales_usuarios li .__container--img {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: span 2 / span 2;
+  }
 }
 
 .lista_canales_usuarios li .__container--info {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-row-start: 2;
   margin: auto;
   width: 100%;
   padding: 1rem;
 }
 
+@media (min-width: 640px) {
+  .lista_canales_usuarios li .__container--info {
+    grid-column-end: 4;
+  }
+}
+
 .lista_canales_usuarios li .__container--info h2 {
+  text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .lista_canales_usuarios li .__container--info h2 {
+    text-align: left;
+  }
 }
 
 .lista_canales_usuarios li .__container--info h2 span {

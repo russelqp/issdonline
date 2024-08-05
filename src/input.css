@@ -154,20 +154,20 @@ p{
 
 
 .lista_canales_usuarios{
-    @apply lg:w-[900px] block my-0 mx-auto p-8
+    @apply lg:w-[900px] block my-0 mx-auto
 }
 .lista_canales_usuarios li{
-    @apply m-auto w-full lg:w-full bg-red-200 md:w-[800px]  my-4 grid grid-cols-4 gap-4 p-4 rounded-lg;
+    @apply m-auto w-full lg:w-full bg-red-200 md:w-[800px]  my-4 grid sm:grid-cols-4 sm:grid-rows-1 gap-1 sm:gap-4 p-2 sm:p-4 rounded-lg grid-rows-2 grid-cols-1 py-4;
 }
 .lista_canales_usuarios li .__container--img{
-    @apply col-start-4 col-end-5  m-auto ;
+    @apply sm:col-start-4 sm:col-end-5  m-auto row-start-1 sm:row-span-2 bg-red-500 p-4 rounded-full;
 }
 .lista_canales_usuarios li .__container--info{
-    @apply col-start-1 col-end-4 m-auto w-full p-4;
+    @apply col-start-1 sm:col-end-4 m-auto w-full p-4 row-start-2;
 }
 
 .lista_canales_usuarios li .__container--info h2{
-    @apply text-2xl font-semibold;
+    @apply text-2xl font-semibold sm:text-left text-center;
 }
 .lista_canales_usuarios li .__container--info h2 span{
     @apply text-gray-600 font-bold
@@ -184,6 +184,7 @@ p{
 .lista_canales_usuarios li .__container--info span a:hover{
     @apply text-blue-400;
 }
+
 .lista_de_enlaces{
     @apply w-full mx-0 my-auto ;
 }
