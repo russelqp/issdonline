@@ -1,11 +1,3 @@
-//Variables js
-
-//-var js_particles ="./js/particles.min.js";
-//- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "/js/uris_headers.js";
--var base_style = "./css/output.css";
-//- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
 -var meta_titlePage ="ISSDOnline 🥇 - Tips";
@@ -23,6 +15,17 @@
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+
+-//Variables de inicio/urls
+include inc/ini.pug
+
+-//Variables url archivos locales
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "/js/uris_headers.js"; esto cambiaba los url desde js"
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
 <!DOCTYPE html>
 
 html(lang="es")
@@ -37,10 +40,10 @@ html(lang="es")
                     article.main__section__article  
                         h1(class="font-black text-3xl mb-10") Mejora tus habilidades
                         .content_skill_cards
-                            a(href="./tips/tipos-de-goles")
+                            a(href=Myurl+"tips/tipos-de-goles")
                                 .__skill_card
                                     .__skill_card_img
-                                        img(src="./images/jugador_brazil_01.png", alt="Jugador brazil")
+                                        img(src=Myurl+"images/jugador_brazil_01.png", alt="Jugador brazil")
                                     .__skill_card_tittle
                                         h3 Tipos de Goles
                                     .__skill_card_desc
@@ -48,7 +51,7 @@ html(lang="es")
                             a(href="")
                                 .__skill_card
                                     .__skill_card_img
-                                        img(src="./images/jugador_argentina_01.png", alt="Jugador argentina")
+                                        img(src=Myurl+"images/jugador_argentina_01.png", alt="Jugador argentina")
                                     .__skill_card_tittle
                                         h3  Mejora tu defensa
                                     .__skill_card_desc
@@ -56,7 +59,7 @@ html(lang="es")
                             a(href="")
                                 .__skill_card
                                     .__skill_card_img
-                                        img(src="./images/portero_01.png", alt="portero")
+                                        img(src=Myurl+"images/portero_01.png", alt="portero")
                                     .__skill_card_tittle
                                         h3 Aprende a manejar al GK
                                     .__skill_card_desc
@@ -64,7 +67,7 @@ html(lang="es")
                             a(href="")
                                 .__skill_card
                                     .__skill_card_img
-                                        img(src="./images/tecnico_02.png", alt="Director tecnico")
+                                        img(src=Myurl+"images/tecnico_02.png", alt="Director tecnico")
                                     .__skill_card_tittle
                                         h3 Aprende a usar las Estrategias
                                     .__skill_card_desc
@@ -72,7 +75,7 @@ html(lang="es")
                             a(href="")
                                 .__skill_card
                                     .__skill_card_img
-                                        img(src="./images/jugador_mexico_01.png", alt="Balon skill")
+                                        img(src=Myurl+"images/jugador_mexico_01.png", alt="Balon skill")
                                     .__skill_card_tittle
                                         h3 Jugadas a balón parado
                                     .__skill_card_desc

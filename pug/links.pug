@@ -1,18 +1,10 @@
-//Variables js
-
-//-var js_particles ="./js/particles.min.js";
-//- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "/js/uris_headers.js";
--var base_style = "./css/output.css";
-//- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
 -var meta_titlePage ="ISSDOnline 🥇 - Links";
 -var meta_canonica = "https://www.issdonline.org/";
 -var meta_descPage = "▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes";
 -var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
--var meta_ogImage = "./images/issdeluxe_online_banner.jpg";
+-var meta_ogImage = "images/issdeluxe_online_banner.jpg";
 //- -var style = "./css/style.css";
 //- -var css_nasa = "./css/animations/nasa.css";
 -var titulos = []
@@ -23,6 +15,18 @@
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+
+-//Variables de inicio/urls
+include inc/ini.pug
+
+-//Variables url archivos locales
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "/js/uris_headers.js"; esto cambiaba los url desde js"
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+
 <!DOCTYPE html>
 
 html(lang="es")
@@ -40,13 +44,13 @@ html(lang="es")
                                 h2.py-2.font-bold Grupos y torneos de ISSD
                                 p.py-2 Aquí encontraras diferentes grupos de ISSD, algunos cuentan con grupos de whatsapp o facebook.
                                 p(class="p-2 w-4/5")
-                                    a(href="./grupos-y-torneos-de-issd" title="grupos y torneos de issd" class=".py-2 flex justify-end")
+                                    a(href=Myurl+"grupos-y-torneos-de-issd" title="grupos y torneos de issd" class=".py-2 flex justify-end")
                                         button(class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ") Visitar
                             li(class="mb-4 w-[800px]")
                                 h2.py-2.font-bold Canales de Jugadores de ISSD
                                 p.py-2 Algunos canales y páginas de jugadores de ISSD, en donde podrás disfrutar de videos de sus partidos.
                                 p(class="p-2 w-4/5")
-                                    a(href="./canales-de-jugadores-issd" title="canales de jugadores de issd" class=".py-2 flex justify-end")
+                                    a(href=Myurl+"canales-de-jugadores-issd" title="canales de jugadores de issd" class=".py-2 flex justify-end")
                                         button(class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ") Visitar
 
                 include inc/footer.pug

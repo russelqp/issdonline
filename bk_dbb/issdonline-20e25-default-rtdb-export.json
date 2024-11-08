@@ -1,0 +1,736 @@
+{
+  "omniranking": [
+    {
+      "ID": 10096,
+      "NOME": "Vinny",
+      "POS": 1,
+      "SCORE": 5066.98
+    },
+    {
+      "ID": 10073,
+      "NOME": "SEP",
+      "POS": 2,
+      "SCORE": 3795.16
+    },
+    {
+      "ID": 10018,
+      "NOME": "DN",
+      "POS": 3,
+      "SCORE": 3494.7
+    },
+    {
+      "ID": 10048,
+      "NOME": "Magico",
+      "POS": 4,
+      "SCORE": 2283.28
+    },
+    {
+      "ID": 10066,
+      "NOME": "Rafa Lopes",
+      "POS": 5,
+      "SCORE": 2249.09
+    },
+    {
+      "ID": 10045,
+      "NOME": "Korke",
+      "POS": 6,
+      "SCORE": 2129.76
+    },
+    {
+      "ID": 10080,
+      "NOME": "Tiago Otw",
+      "POS": 7,
+      "SCORE": 2002.98
+    },
+    {
+      "ID": 10059,
+      "NOME": "Novello",
+      "POS": 8,
+      "SCORE": 1748.37
+    },
+    {
+      "ID": 10062,
+      "NOME": "Pilo Jr.",
+      "POS": 9,
+      "SCORE": 1741.39
+    },
+    {
+      "ID": 10076,
+      "NOME": "Torcedor Fanatico",
+      "POS": 10,
+      "SCORE": 1737.72
+    },
+    {
+      "ID": 10065,
+      "NOME": "Ponxo",
+      "POS": 11,
+      "SCORE": 1628.77
+    },
+    {
+      "ID": 10072,
+      "NOME": "Russel",
+      "POS": 12,
+      "SCORE": 1523.03
+    },
+    {
+      "ID": 10015,
+      "NOME": "Darkreich",
+      "POS": 13,
+      "SCORE": 1513.42
+    },
+    {
+      "ID": 10056,
+      "NOME": "MrCyborg",
+      "POS": 14,
+      "SCORE": 1455
+    },
+    {
+      "ID": 10035,
+      "NOME": "Irreverente",
+      "POS": 15,
+      "SCORE": 1357.84
+    },
+    {
+      "ID": 10006,
+      "NOME": "Arijunino",
+      "POS": 16,
+      "SCORE": 1300.5
+    },
+    {
+      "ID": 10049,
+      "NOME": "Maracuya",
+      "POS": 17,
+      "SCORE": 1291.68
+    },
+    {
+      "ID": 10036,
+      "NOME": "Jancer",
+      "POS": 18,
+      "SCORE": 1280.41
+    },
+    {
+      "ID": 10061,
+      "NOME": "Papo",
+      "POS": 19,
+      "SCORE": 1238.77
+    },
+    {
+      "ID": 10099,
+      "NOME": "Xanchez",
+      "POS": 20,
+      "SCORE": 1234.11
+    },
+    {
+      "ID": 10089,
+      "NOME": "MetalNero",
+      "POS": 21,
+      "SCORE": 1198.36
+    },
+    {
+      "ID": 10009,
+      "NOME": "Bogard",
+      "POS": 22,
+      "SCORE": 1182.47
+    },
+    {
+      "ID": 10052,
+      "NOME": "Mattels",
+      "POS": 23,
+      "SCORE": 1136.95
+    },
+    {
+      "ID": 10010,
+      "NOME": "Bracagol",
+      "POS": 24,
+      "SCORE": 1126.06
+    },
+    {
+      "ID": 10047,
+      "NOME": "Luchoag",
+      "POS": 25,
+      "SCORE": 1116.68
+    },
+    {
+      "ID": 10024,
+      "NOME": "Esteban Parada",
+      "POS": 26,
+      "SCORE": 1113.47
+    },
+    {
+      "ID": 10022,
+      "NOME": "Edinho Mafra",
+      "POS": 27,
+      "SCORE": 1068.23
+    },
+    {
+      "ID": 10030,
+      "NOME": "Gois",
+      "POS": 28,
+      "SCORE": 1037.95
+    },
+    {
+      "ID": 10001,
+      "NOME": "7Fachas",
+      "POS": 29,
+      "SCORE": 1033.12
+    },
+    {
+      "ID": 10054,
+      "NOME": "MayconVIP",
+      "POS": 30,
+      "SCORE": 1020.02
+    },
+    {
+      "ID": 10043,
+      "NOME": "Joshi",
+      "POS": 31,
+      "SCORE": 954.16
+    },
+    {
+      "ID": 10033,
+      "NOME": "Hartmann",
+      "POS": 32,
+      "SCORE": 920.79
+    },
+    {
+      "ID": 10028,
+      "NOME": "Gansito del Mal",
+      "POS": 33,
+      "SCORE": 897.28
+    },
+    {
+      "ID": 10032,
+      "NOME": "Guns",
+      "POS": 34,
+      "SCORE": 889.22
+    },
+    {
+      "ID": 10095,
+      "NOME": "Salman",
+      "POS": 35,
+      "SCORE": 882.51
+    },
+    {
+      "ID": 10063,
+      "NOME": "Plankton",
+      "POS": 36,
+      "SCORE": 877.63
+    },
+    {
+      "ID": 10016,
+      "NOME": "Davidwas",
+      "POS": 37,
+      "SCORE": 877.53
+    },
+    {
+      "ID": 10021,
+      "NOME": "Dudu",
+      "POS": 38,
+      "SCORE": 859.46
+    },
+    {
+      "ID": 10042,
+      "NOME": "John Gaspar",
+      "POS": 39,
+      "SCORE": 848.77
+    },
+    {
+      "ID": 10038,
+      "NOME": "Japones Roots",
+      "POS": 40,
+      "SCORE": 816.46
+    },
+    {
+      "ID": 10002,
+      "NOME": "8Senses",
+      "POS": 41,
+      "SCORE": 814.84
+    },
+    {
+      "ID": 10051,
+      "NOME": "Martins Schwanstaiger",
+      "POS": 42,
+      "SCORE": 801.95
+    },
+    {
+      "ID": 10037,
+      "NOME": "Janigoles",
+      "POS": 43,
+      "SCORE": 794.73
+    },
+    {
+      "ID": 10012,
+      "NOME": "Cazador",
+      "POS": 44,
+      "SCORE": 754.73
+    },
+    {
+      "ID": 10074,
+      "NOME": "Tec Art",
+      "POS": 45,
+      "SCORE": 742.95
+    },
+    {
+      "ID": 10082,
+      "NOME": "Raiden",
+      "POS": 46,
+      "SCORE": 725.75
+    },
+    {
+      "ID": 10034,
+      "NOME": "Himura",
+      "POS": 47,
+      "SCORE": 708.71
+    },
+    {
+      "ID": 10020,
+      "NOME": "Duart",
+      "POS": 48,
+      "SCORE": 681.99
+    },
+    {
+      "ID": 10008,
+      "NOME": "Beagle",
+      "POS": 49,
+      "SCORE": 647.65
+    },
+    {
+      "ID": 10017,
+      "NOME": "Diabolis",
+      "POS": 50,
+      "SCORE": 607.22
+    },
+    {
+      "ID": 10031,
+      "NOME": "Grunge",
+      "POS": 51,
+      "SCORE": 531.13
+    },
+    {
+      "ID": 10025,
+      "NOME": "FedeApaza",
+      "POS": 52,
+      "SCORE": 488.56
+    },
+    {
+      "ID": 10091,
+      "NOME": "Omaar",
+      "POS": 53,
+      "SCORE": 487.93
+    },
+    {
+      "ID": 10087,
+      "NOME": "Chita",
+      "POS": 54,
+      "SCORE": 465.98
+    },
+    {
+      "ID": 10055,
+      "NOME": "Miguel Yãnez",
+      "POS": 55,
+      "SCORE": 434.39
+    },
+    {
+      "ID": 10057,
+      "NOME": "Nask",
+      "POS": 56,
+      "SCORE": 431.15
+    },
+    {
+      "ID": 10069,
+      "NOME": "Rodri Ferr",
+      "POS": 57,
+      "SCORE": 420.28
+    },
+    {
+      "ID": 10077,
+      "NOME": "Valerogames",
+      "POS": 58,
+      "SCORE": 387.05
+    },
+    {
+      "ID": 10098,
+      "NOME": "Wesley",
+      "POS": 59,
+      "SCORE": 382.35
+    },
+    {
+      "ID": 10102,
+      "NOME": "Metroid",
+      "POS": 60,
+      "SCORE": 363.71
+    },
+    {
+      "ID": 10090,
+      "NOME": "Kikedark",
+      "POS": 61,
+      "SCORE": 351.98
+    },
+    {
+      "ID": 10088,
+      "NOME": "Lener Trellez",
+      "POS": 62,
+      "SCORE": 351.98
+    },
+    {
+      "ID": 10053,
+      "NOME": "Maverick",
+      "POS": 63,
+      "SCORE": 316.58
+    },
+    {
+      "ID": 10106,
+      "NOME": "Damian",
+      "POS": 64,
+      "SCORE": 299.25
+    },
+    {
+      "ID": 10023,
+      "NOME": "Edufarias",
+      "POS": 65,
+      "SCORE": 288.56
+    },
+    {
+      "ID": 10112,
+      "NOME": "Rafael Mac",
+      "POS": 66,
+      "SCORE": 285
+    },
+    {
+      "ID": 10094,
+      "NOME": "Gustavo",
+      "POS": 67,
+      "SCORE": 280.73
+    },
+    {
+      "ID": 10093,
+      "NOME": "Cesar Chulls",
+      "POS": 68,
+      "SCORE": 280.73
+    },
+    {
+      "ID": 10092,
+      "NOME": "Pablo MX",
+      "POS": 69,
+      "SCORE": 280.73
+    },
+    {
+      "ID": 10060,
+      "NOME": "Pandra",
+      "POS": 70,
+      "SCORE": 280.73
+    },
+    {
+      "ID": 10100,
+      "NOME": "Leandro_Leh",
+      "POS": 71,
+      "SCORE": 275.91
+    },
+    {
+      "ID": 10005,
+      "NOME": "AlanUBZ",
+      "POS": 72,
+      "SCORE": 270.75
+    },
+    {
+      "ID": 10004,
+      "NOME": "Agustin",
+      "POS": 73,
+      "SCORE": 261.01
+    },
+    {
+      "ID": 10109,
+      "NOME": "Skywalker",
+      "POS": 74,
+      "SCORE": 242.25
+    },
+    {
+      "ID": 10086,
+      "NOME": "Alysonmelo",
+      "POS": 75,
+      "SCORE": 223.73
+    },
+    {
+      "ID": 10085,
+      "NOME": "Aladdin",
+      "POS": 76,
+      "SCORE": 223.73
+    },
+    {
+      "ID": 10084,
+      "NOME": "Hermano",
+      "POS": 77,
+      "SCORE": 223.73
+    },
+    {
+      "ID": 10081,
+      "NOME": "Chester de Mani",
+      "POS": 78,
+      "SCORE": 223.73
+    },
+    {
+      "ID": 10068,
+      "NOME": "Robert_Warrior",
+      "POS": 79,
+      "SCORE": 223.73
+    },
+    {
+      "ID": 10044,
+      "NOME": "Jurandi",
+      "POS": 80,
+      "SCORE": 223.73
+    },
+    {
+      "ID": 10027,
+      "NOME": "Felipe Flores",
+      "POS": 81,
+      "SCORE": 213
+    },
+    {
+      "ID": 10007,
+      "NOME": "Arreguy",
+      "POS": 82,
+      "SCORE": 202.69
+    },
+    {
+      "ID": 10103,
+      "NOME": "Rodrigo ISSD",
+      "POS": 83,
+      "SCORE": 192
+    },
+    {
+      "ID": 10101,
+      "NOME": "Animal",
+      "POS": 84,
+      "SCORE": 183.75
+    },
+    {
+      "ID": 10026,
+      "NOME": "Felipe Alves",
+      "POS": 85,
+      "SCORE": 181.44
+    },
+    {
+      "ID": 10083,
+      "NOME": "Sirpha",
+      "POS": 86,
+      "SCORE": 174.56
+    },
+    {
+      "ID": 10108,
+      "NOME": "Gus",
+      "POS": 87,
+      "SCORE": 171
+    },
+    {
+      "ID": 10105,
+      "NOME": "Cleber_Bim",
+      "POS": 88,
+      "SCORE": 142.5
+    },
+    {
+      "ID": 10104,
+      "NOME": "Carbon",
+      "POS": 89,
+      "SCORE": 142.5
+    },
+    {
+      "ID": 10029,
+      "NOME": "Gedi",
+      "POS": 90,
+      "SCORE": 142.5
+    },
+    {
+      "ID": 10041,
+      "NOME": "Joel John",
+      "POS": 91,
+      "SCORE": 130.13
+    },
+    {
+      "ID": 10117,
+      "NOME": "Javito",
+      "POS": 92,
+      "SCORE": 118.2
+    },
+    {
+      "ID": 10116,
+      "NOME": "Mallagon",
+      "POS": 93,
+      "SCORE": 118.2
+    },
+    {
+      "ID": 10115,
+      "NOME": "Erick",
+      "POS": 94,
+      "SCORE": 118.2
+    },
+    {
+      "ID": 10114,
+      "NOME": "Ballesta",
+      "POS": 95,
+      "SCORE": 118.2
+    },
+    {
+      "ID": 10113,
+      "NOME": "JB",
+      "POS": 96,
+      "SCORE": 118.2
+    },
+    {
+      "ID": 10111,
+      "NOME": "Dani",
+      "POS": 97,
+      "SCORE": 114
+    },
+    {
+      "ID": 10110,
+      "NOME": "Di'narc",
+      "POS": 98,
+      "SCORE": 114
+    },
+    {
+      "ID": 10075,
+      "NOME": "Terroga",
+      "POS": 99,
+      "SCORE": 108.3
+    },
+    {
+      "ID": 10071,
+      "NOME": "Ruka",
+      "POS": 100,
+      "SCORE": 91.88
+    },
+    {
+      "ID": 10122,
+      "NOME": "El Colo",
+      "POS": 101,
+      "SCORE": 71.25
+    },
+    {
+      "ID": 10121,
+      "NOME": "Alfredo",
+      "POS": 102,
+      "SCORE": 71.25
+    },
+    {
+      "ID": 10119,
+      "NOME": "Lalo",
+      "POS": 103,
+      "SCORE": 71.25
+    },
+    {
+      "ID": 10118,
+      "NOME": "Jaime",
+      "POS": 104,
+      "SCORE": 71.25
+    },
+    {
+      "ID": 10013,
+      "NOME": "Chow_4",
+      "POS": 105,
+      "SCORE": 61.14
+    },
+    {
+      "ID": 10120,
+      "NOME": "Arroyo",
+      "POS": 106,
+      "SCORE": 58.88
+    },
+    {
+      "ID": 10019,
+      "NOME": "Draser",
+      "POS": 107,
+      "SCORE": 58.88
+    },
+    {
+      "ID": 10097,
+      "NOME": "Tales",
+      "POS": 108,
+      "SCORE": 45.94
+    },
+    {
+      "ID": 10039,
+      "NOME": "Jiren",
+      "POS": 109,
+      "SCORE": 45.94
+    },
+    {
+      "ID": 10050,
+      "NOME": "Marshow",
+      "POS": 110,
+      "SCORE": 35.63
+    },
+    {
+      "ID": 10107,
+      "NOME": "Chita",
+      "POS": 111,
+      "SCORE": 0
+    },
+    {
+      "ID": 10079,
+      "NOME": "Ronny",
+      "POS": 112,
+      "SCORE": 0
+    },
+    {
+      "ID": 10078,
+      "NOME": "Vitor Conrado",
+      "POS": 113,
+      "SCORE": 0
+    },
+    {
+      "ID": 10070,
+      "NOME": "Rubinho",
+      "POS": 114,
+      "SCORE": 0
+    },
+    {
+      "ID": 10067,
+      "NOME": "Rafael Vieira",
+      "POS": 115,
+      "SCORE": 0
+    },
+    {
+      "ID": 10064,
+      "NOME": "Plitzki",
+      "POS": 116,
+      "SCORE": 0
+    },
+    {
+      "ID": 10058,
+      "NOME": "Nick Carvalho",
+      "POS": 117,
+      "SCORE": 0
+    },
+    {
+      "ID": 10046,
+      "NOME": "Luan Silva",
+      "POS": 118,
+      "SCORE": 0
+    },
+    {
+      "ID": 10040,
+      "NOME": "João Araujo",
+      "POS": 119,
+      "SCORE": 0
+    },
+    {
+      "ID": 10014,
+      "NOME": "Daniel Garcia",
+      "POS": 120,
+      "SCORE": 0
+    },
+    {
+      "ID": 10011,
+      "NOME": "Carlos Jose Carlos Jose",
+      "POS": 121,
+      "SCORE": 0
+    },
+    {
+      "ID": 10003,
+      "NOME": "Abraão",
+      "POS": 122,
+      "SCORE": 0
+    }
+  ]
+}
