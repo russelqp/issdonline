@@ -1,4 +1,4 @@
-    var requestURL = 'js/data_channel_players.json';
+    var requestURL = Myurl+'js/data_channel_players.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -67,47 +67,47 @@
             var pais_img = document.createElement('img');
             switch (banderas) {
                 case "México":
-                    pais_img.setAttribute('src', 'images/flags/flag_mexico.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_mexico.png');
                     pais_img.setAttribute('alt', 'flag_mexico.png');
                     return pais_img.outerHTML;
                     break;
                 case "Brasil":
-                    pais_img.setAttribute('src', 'images/flags/flag_brasil.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_brasil.png');
                     pais_img.setAttribute('alt', 'flag_brasil.png');
                     return pais_img.outerHTML;
                     break;
                 case "Costa Rica":
-                    pais_img.setAttribute('src', 'images/flags/flag_costa_rica.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_costa_rica.png');
                     pais_img.setAttribute('alt', 'flag_costa_rica.png');
                     return pais_img.outerHTML;
                   break;
                 case "Colombia":
-                    pais_img.setAttribute('src', 'images/flags/flag_colombia.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_colombia.png');
                     pais_img.setAttribute('alt', 'flag_colombia.png');
                     return pais_img.outerHTML;
                     break;
                 case "Peru":
-                    pais_img.setAttribute('src', 'images/flags/flag_peru.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_peru.png');
                     pais_img.setAttribute('alt', 'flag_peru.png');
                     return pais_img.outerHTML;
                     break;
                 case "Chile":
-                    pais_img.setAttribute('src', 'images/flags/flag_chile.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_chile.png');
                     pais_img.setAttribute('alt', 'flag_chile.png');
                     return pais_img.outerHTML;
                     break;
                 case "Argentina":
-                    pais_img.setAttribute('src', 'images/flags/flag_argentina.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_argentina.png');
                     pais_img.setAttribute('alt', 'flag_argentina.png');
                     return pais_img.outerHTML;
                     break;
                 case "Alemania":
-                    pais_img.setAttribute('src', 'images/flags/flag_alemania.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_alemania.png');
                     pais_img.setAttribute('alt', 'flag_alemania.png');
                     return pais_img.outerHTML;
                     break;
                 case "Paraguay":
-                    pais_img.setAttribute('src', 'images/flags/flag_paraguay.png');
+                    pais_img.setAttribute('src', Myurl+'images/flags/flag_paraguay.png');
                     pais_img.setAttribute('alt', 'flag_paraguay.png');
                     return pais_img.outerHTML;
                         break;
@@ -118,7 +118,7 @@
 
         }
         for(var i = 0; i < players.length; i++){
-            container_li += `<li class=${"id-0"+i}><div class="__container--info"><h2 class="mb-4"> Hola, yo soy <span>${players[i].nick_player[0]}</span><span class="inline-block ml-4 align-middle">${banderas(players[i].pais)}</span></h2><p>${players[i].bio_player}</p><div class="__iconos"><h3 class="my-4">Mis canales: </h3>${a_icon(players[i].redes_player)}</div></div><div class="__container--img"><figure><img src='${players[i].img_player}' width="100" height="130" alt='avatar_jugador_issd${players[i].nick_player}'/></figure></div></li>`;
+            container_li += `<li class=${"id-0"+i}><div class="__container--info"><h2 class="mb-4"> Hola, yo soy <span>${players[i].nick_player[0]}</span><span class="inline-block ml-4 align-middle">${banderas(players[i].pais)}</span></h2><p>${players[i].bio_player}</p><div class="__iconos"><h3 class="my-4">Mis canales: </h3>${a_icon(players[i].redes_player)}</div></div><div class="__container--img"><figure><img src='${Myurl+players[i].img_player}' width="100" height="130" alt='avatar_jugador_issd${players[i].nick_player}'/></figure></div></li>`;
         }
         ul_channels.innerHTML = container_li;
         //ul_channels.innerHTML= container_li.outerHTML;

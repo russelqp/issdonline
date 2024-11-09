@@ -1,11 +1,3 @@
-//Variables js
-
-//-var js_particles ="./js/particles.min.js";
-//- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "/js/uris_headers.js";
--var base_style = "./css/output.css";
-//- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
 -var meta_titlePage ="ISSDOnline 🥇 - Links";
@@ -23,9 +15,16 @@
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
-<!DOCTYPE html>
 
-html(lang="es")
+//- Variables js
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "./js/uris_headers.js";
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+include inc/ini.pug
+
     head
         include inc/head.pug    
     body(class="")
@@ -39,7 +38,7 @@ html(lang="es")
                         h1(class="font-bold text-3xl py-4") Enlaces útiles ISSD
                         ul.lista_de_enlaces
                             li
-                                a(href="./grupos-y-torneos-de-issd" title="grupos y torneos de issd")
+                                a(href=Myurl+"grupos-y-torneos-de-issd" title="grupos y torneos de issd")
                                     .box_button
                                         .box_info
                                             h2.py-2.font-bold Grupos y torneos de ISSD
@@ -47,10 +46,10 @@ html(lang="es")
                                             p(class="p-2 w-4/5")
                                         .box_img
                                             figure
-                                                img(src="images/Default_copa_logo.jpg", alt="avatar streamer")
+                                                img(src=Myurl+"images/Default_copa_logo.jpg", alt="avatar streamer")
                                     
                             li
-                                a(href="./canales-de-jugadores-issd" title="canales de jugadores de issd")
+                                a(href=Myurl+"canales-de-jugadores-issd" title="canales de jugadores de issd")
                                     .box_button
                                         .box_info
                                             h2.py-2.font-bold Canales de Jugadores de ISSD
@@ -58,7 +57,7 @@ html(lang="es")
                                             p(class="p-2 w-4/5")
                                         .box_img 
                                             figure 
-                                                img(src="images/Default_streamer_logo.jpg", alt="avatar streamer")
+                                                img(src=Myurl+"images/Default_streamer_logo.jpg", alt="avatar streamer")
                                     
 
                 include inc/footer.pug

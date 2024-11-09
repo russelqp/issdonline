@@ -1,12 +1,3 @@
-//Variables js
-//- ul.lista_canales_usuarios>(li>((div.__container--img>figure>img)+(div.container--info>(h2{Nombre del canal}+h3{subtitulo}+{descripción}+a))))*10
-
-//-var js_particles ="./js/particles.min.js";
-//- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "./js/uris_headers.js";
--var base_style = "./css/output.css";
-//- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
 -var meta_titlePage ="ISSDOnline 🥇 - Canales de jugadores";
@@ -32,12 +23,15 @@
     
     
 
+//- Variables js
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "./js/uris_headers.js";
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+include inc/ini.pug
 
-
-<!DOCTYPE html>
-
-
-html(lang="es")
     head
         include inc/head.pug    
     body(class="")
@@ -51,7 +45,7 @@ html(lang="es")
                         ul.lista_canales_usuarios
 
 
-        script(src="js/players_channels.js")
+        script(src=Myurl+"js/players_channels.js")
         include inc/footer.pug
 
                 

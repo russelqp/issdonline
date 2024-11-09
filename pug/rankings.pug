@@ -1,12 +1,4 @@
 //Variables js
-  
-
-//-var js_particles ="./js/particles.min.js";
-//- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "./js/uris_headers.js";
--var base_style = "./css/output.css";
-//- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
 -var meta_titlePage ="ISSDOnline 🥇 - Rankings";
@@ -24,9 +16,14 @@
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
-<!DOCTYPE html>
-
-html(lang="es")
+//- Variables js
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "./js/uris_headers.js";
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+include inc/ini.pug
     head
         include inc/head.pug
     body(class="")
@@ -43,7 +40,7 @@ html(lang="es")
                         script.
                             var s = document.createElement('script');
                             s.setAttribute('type', 'module');
-                            s.src = 'js/ranking.js';
+                            s.src = Myurl+'js/ranking.js';
                             document.getElementsByTagName("head")[0].appendChild(s)
 
                         //Conectar Json de firebase

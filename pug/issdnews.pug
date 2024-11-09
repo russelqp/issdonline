@@ -1,11 +1,3 @@
-//Variables js
-
-//-var js_particles ="./js/particles.min.js";
-//- -var js_nasa ="./js/nasa.js";
--var js_efects_gral = "./js/efects_gral.js";
--var js_urls = "./js/uris_headers.js";
--var base_style = "./css/output.css";
-//- -var nasa_style = "./css/animations/nasa.css";
 
 //Variables para metadatos de la págiana actual
 -var meta_titlePage ="ISSDOnline 🥇 - Tips";
@@ -23,9 +15,15 @@
 //-         h3=titulos
 //-         p=descripciones
 //-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
-<!DOCTYPE html>
 
-html(lang="es")
+//- Variables js
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "./js/uris_headers.js";
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+include inc/ini.pug
     head
         include inc/head.pug
         
@@ -41,67 +39,67 @@ html(lang="es")
                     article.main__section__article
                         h2.pb-8 Versión en Español
                         .content_skill_cards
-                            a(href="./images/issdnews_mayo_2023_no1.jpg" alt="imagen grande issd news mayo 2023")
+                            a(href=Myurl+"images/issdnews_mayo_2023_no1.jpg" alt="imagen grande issd news mayo 2023")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_mayo_2023_no1_sm.jpg", alt="Miniatura issd news mayo 2023")
+                                        img(src=Myurl+"images/issdnews_mayo_2023_no1_sm.jpg", alt="Miniatura issd news mayo 2023")
                                     .__skill_card_tittle
                                         h3 N° 1 Mayo 2023 
-                            a(href="./images/issdnews_julio_2023_no2.jpg" alt="imagen grande issd news julio 2023")
+                            a(href=Myurl+"images/issdnews_julio_2023_no2.jpg" alt="imagen grande issd news julio 2023")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_julio_2023_no2_sm.jpg", alt="Miniatura issd news julio 2023")
+                                        img(src=Myurl+"images/issdnews_julio_2023_no2_sm.jpg", alt="Miniatura issd news julio 2023")
                                     .__skill_card_tittle
                                         h3  N° 2 Julio 2023 
-                            a(href="./images/issdnews_septiembre_2023_no3.jpg" alt="imagen grande issd news septiembre 2023")
+                            a(href=Myurl+"images/issdnews_septiembre_2023_no3.jpg" alt="imagen grande issd news septiembre 2023")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_septiembre_2023_no3_sm.jpg", alt="Miniatura issd news septiembre 2023")
+                                        img(src=Myurl+"images/issdnews_septiembre_2023_no3_sm.jpg", alt="Miniatura issd news septiembre 2023")
                                     .__skill_card_tittle
                                         h3 N° 3 Septiembre 2023
-                            a(href="./images/issdnews_diciembre_2023_no4.jpg" alt="imagen grande issd news diciembre 2023")
+                            a(href=Myurl+"images/issdnews_diciembre_2023_no4.jpg" alt="imagen grande issd news diciembre 2023")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_diciembre_2023_no4_sm.jpg", alt="Director tecnico")
+                                        img(src=Myurl+"images/issdnews_diciembre_2023_no4_sm.jpg", alt="Director tecnico")
                                     .__skill_card_tittle
                                         h3 N° 4 Diciembre 2023
-                            a(href="./images/issdnews_agosto_2024_no5.jpeg" alt="imagen grande issd news agosto 2024")
+                            a(href=Myrul+"images/issdnews_agosto_2024_no5.jpeg" alt="imagen grande issd news agosto 2024")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_agosto_2024_no5_sm.jpg", alt="imagen miniatura issd news agosto 2024")
+                                        img(src=Myurl+"images/issdnews_agosto_2024_no5_sm.jpg", alt="imagen miniatura issd news agosto 2024")
                                     .__skill_card_tittle
                                         h3 N° 5 Agosto 2024
                     article.main__section__article
                         h2.pb-8 Versión em Portugues
                         .content_skill_cards
-                            a(href="./images/issdnews_maio_2023_no1_br.jpeg" alt="imagen grande issd news maio 2023 en portugues")
+                            a(href=Myurl+"images/issdnews_maio_2023_no1_br.jpeg" alt="imagen grande issd news maio 2023 en portugues")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_mayo_2023_no1_br_sm.jpg", alt="Miniatura issd news maio 2023 en portugues")
+                                        img(src=Myurl+"images/issdnews_mayo_2023_no1_br_sm.jpg", alt="Miniatura issd news maio 2023 en portugues")
                                     .__skill_card_tittle
                                         h3 N° 1 Maio 2023
-                            a(href="./images/issdnews_julho_2023_no2_br.jpg" alt="imagen grande issd news julho 2023 en portugues")
+                            a(href=Myurl+"images/issdnews_julho_2023_no2_br.jpg" alt="imagen grande issd news julho 2023 en portugues")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_julho_2023_no2_br_sm.jpg", alt="Miniatura issd news julho 2023 en portugues")
+                                        img(src=Myurl+"images/issdnews_julho_2023_no2_br_sm.jpg", alt="Miniatura issd news julho 2023 en portugues")
                                     .__skill_card_tittle
                                         h3 N° 2 Julho 2023 
-                            a(href="./images/issdnews_septembro_2023_no3_br.jpg" alt="imagen grande issd news setembro 2023 en portugues")
+                            a(href=Myurl+"images/issdnews_septembro_2023_no3_br.jpg" alt="imagen grande issd news setembro 2023 en portugues")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_septembro_2023_no3_br_sm.jpg", alt="Miniatura issd news setembro 2023 en portugues")
+                                        img(src=Myurl+"images/issdnews_septembro_2023_no3_br_sm.jpg", alt="Miniatura issd news setembro 2023 en portugues")
                                     .__skill_card_tittle
                                         h3 N° 3 Setembro 2023 
-                            a(href="./images/issdnews_diciembre_2023_no4_br.jpg" alt="imagen grande issd news diciembre 2023 en portugues")
+                            a(href=Myurl+"images/issdnews_diciembre_2023_no4_br.jpg" alt="imagen grande issd news diciembre 2023 en portugues")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_diciembre_2023_no4_br_sm.jpg", alt="imagen miniatura issd news diciembre 2023 en portugues")
+                                        img(src=Myurl+"images/issdnews_diciembre_2023_no4_br_sm.jpg", alt="imagen miniatura issd news diciembre 2023 en portugues")
                                     .__skill_card_tittle
                                         h3 N° 4 Dezembro 2023
-                            a(href="./images/issdnews_agosto_2024_no5_br.jpeg" alt="imagen grande issd news agosto 2024 en portugues")
+                            a(href=Myurl+"images/issdnews_agosto_2024_no5_br.jpeg" alt="imagen grande issd news agosto 2024 en portugues")
                                 .__skill_card
                                     .__skill_card_img.rounded-none
-                                        img(src="./images/issdnews_agosto_2024_no5_br_sm.jpg", alt="imagen miniatura issd news agosto 2024 en portugues")
+                                        img(src=Myurl+"images/issdnews_agosto_2024_no5_br_sm.jpg", alt="imagen miniatura issd news agosto 2024 en portugues")
                                     .__skill_card_tittle
                                         h3 N° 5 Agosto 2024
         include inc/footer.pug

@@ -1,0 +1,80 @@
+
+//Variables para metadatos de la págiana actual
+-var meta_titlePage ="ISSDOnline 🥇 - Tips";
+-var meta_canonica = "https://www.issdonline.org/";
+-var meta_descPage = "▷ISSDOline información para poder jugar en linea con otras personas este majestuoso cláasico de snes";
+-var meta_keyWordsPage = "issd, online, juegos retro, superstar soccer deluxe, retro snes, jugar en linea, torneos issd";
+-var meta_ogImage = "./images/issdeluxe_online_banner.jpg";
+//- -var style = "./css/style.css";
+//- -var css_nasa = "./css/animations/nasa.css";
+-var titulos = []
+-var descripciones = []
+//- mixin ejemplo(imagen, titulos_, descripciones, url_servicio)
+//-     .servicios__servicio
+//-         img(src="images/servicios/"+imagen alt=titulo_serv)
+//-         h3=titulos
+//-         p=descripciones
+//-         a.btn_mas_info(href=url_servicio title=titulo_serv) Más información
+
+//- Variables js
+//-var js_particles ="./js/particles.min.js";
+//- -var js_nasa ="./js/nasa.js";
+-var js_efects_gral = "js/efects_gral.js";
+//-var js_urls = "./js/uris_headers.js";
+-var base_style = "css/output.css";
+//- -var nasa_style = "./css/animations/nasa.css";
+include inc/ini.pug
+    head
+        include inc/head.pug
+        
+    body(class="")
+        #container
+            include inc/header.pug
+            main
+                section.main__section
+                    article.main__section__article  
+                        h1(class="font-black text-3xl mb-10") Mejora tus habilidades
+                        .content_skill_cards
+                            a(href=Myurl+"tips/tipos-de-goles")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src=Myurl+"images/jugador_brazil_01.png", alt="Jugador brazil")
+                                    .__skill_card_tittle
+                                        h3 Tipos de Goles
+                                    .__skill_card_desc
+                                        p Aumenta tu arsenal de goles para tener más chances de anotar.
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src=Myurl+"images/jugador_argentina_01.png", alt="Jugador argentina")
+                                    .__skill_card_tittle
+                                        h3  Mejora tu defensa
+                                    .__skill_card_desc
+                                        p Algunos tips de ayuda para mejorar tu defensa y evitar que tu adversario pueda anotar.
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src=Myurl+"images/portero_01.png", alt="portero")
+                                    .__skill_card_tittle
+                                        h3 Aprende a manejar al GK
+                                    .__skill_card_desc
+                                        p Algunos consejos y explicación para sacarle provecho a tu GK y evitar algunos goles.
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src=Myurl+"images/tecnico_02.png", alt="Director tecnico")
+                                    .__skill_card_tittle
+                                        h3 Aprende a usar las Estrategias
+                                    .__skill_card_desc
+                                        p Explicación de como funcionan las estrategias,  que podrán ayudarte a crear oportunidades, abrirte por la cancha y sorprender a tu rivales. 
+                            a(href="")
+                                .__skill_card
+                                    .__skill_card_img
+                                        img(src=Myurl+"images/jugador_mexico_01.png", alt="Balon skill")
+                                    .__skill_card_tittle
+                                        h3 Jugadas a balón parado
+                                    .__skill_card_desc
+                                        p Aprende a anotar goles de tiros libres o generar goles desde tiros de esquina.
+
+                            
+        include inc/footer.pug
