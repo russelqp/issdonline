@@ -5,6 +5,7 @@ const tache_button = document.querySelector('.icon-tache');
 
 burgerButton.addEventListener('click', hideShow);
 tache_button.addEventListener('click', hideShow);
+tache_button.style.transform = "scale(0)";
  
  function hideShow(e){
    e.preventDefault();

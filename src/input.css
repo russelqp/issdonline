@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+
+
+@source './node_modules/some-third-party-lib/**/*.css';
+@plugin 'flowbite/plugin';
 
 /* Variables */
 :root{
@@ -35,7 +38,7 @@ p{
 .hero__icon{
     @apply w-1/5 p-0 grid place-content-center;
 }
-.hero__icon figure{
+.hero__icon figure{ 
     @apply w-[100px] h-[100px] ;
 }
 .welcome, .main__section{
@@ -95,7 +98,7 @@ p{
     @apply grid grid-rows-3 bg-white rounded-2xl gap-4;
 }
 .__skill_card_img {
-    @apply bg-green-500 grid content-center justify-center h-auto m-auto w-full rounded-t-2xl;
+    @apply bg-green-500 grid content-center justify-center h-auto mx-auto w-full rounded-t-2xl ;
 }
 .listado_ligas li {
     @apply mb-4
@@ -104,7 +107,7 @@ p{
     @apply text-green-500
 }
 .__skill_card_img img{
-    @apply w-full h-auto border-2;
+    @apply w-full h-auto;
 }
 .__skill_card_tittle {
     @apply m-auto w-full justify-center text-center py-5;
@@ -514,3 +517,45 @@ main{
     font-weight: 900;
     content: "\f007";
   }
+
+
+  /**CONVIRTIENDO CONFIG.JS A CSS**/
+ 
+  /*Define  global themr variables*/
+
+  @theme {
+
+    /*Fonts*/
+    --font-sans: "Gordita", sans-serif, ui-sans-serif, system-ui;
+    --font-serif: ui-serif, "Georgia";
+    --font-mono: ui-monospace, "SFMono-Regular";
+    --font-display: "Oswald";
+    --font-body: "Open Sans";
+
+    /*Colors*/
+
+    --color-red-issd: #E73724;
+    --color-yellow-issd: #FFB611;
+
+    
+    /*BACKGROUND*/
+
+    --bg-hero-pattern: url('/images/fondo_rayas_verdes.png');
+
+   /*GRID*/
+    --grid-template-rows-3: repeat (3, 1fr);
+    
+    /*SCREENS*/
+
+    --breakpoint-xsm: 480px;
+    
+
+    --breakpoint-xxsm: 320px;
+   
+
+    --breakpoint-desktop: 1280px;
+   
+  }
+
+
+  
