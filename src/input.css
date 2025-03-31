@@ -317,10 +317,10 @@ main{
     content: "«";
     margin-right: 8px;
     background-color: rgb(240 82 82 / var(--tw-text-opacity));
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 5px;
-    vertical-align: middle;
+    vertical-align:middle;
     color: var(--red-base);
     font-family: Gordita, sans-serif;
     left: 0;
