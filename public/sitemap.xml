@@ -111,17 +111,7 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://issdonline.org/./como-jugar-issd-online</loc>
-  <priority>0.2</priority>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
   <loc>https://issdonline.org/canales-de-jugadores-issd</loc>
-  <priority>0.2</priority>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc></loc>
   <priority>0.2</priority>
   <changefreq>yearly</changefreq>
 </url>
