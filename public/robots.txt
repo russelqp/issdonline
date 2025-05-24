@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /node_modules/
+Disallow: /js/
+Disallow: /inc/

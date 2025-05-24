@@ -30,7 +30,7 @@ p{
 
 /*@applys*/
 .btn_boxmain{
-    @apply cursor-auto flex hover:cursor-pointer;
+    @apply cursor-auto flex hover:cursor-pointer mb-8 w-[90%] ;
 }
 .boxmain{
     @apply rounded-2xl bg-white block md:inline-block w-full;
@@ -60,7 +60,7 @@ p{
     @apply flex w-full text-left items-center gap-4 align-middle justify-center self-center p-4 m-auto xl:w-[1280px];
 }
 .section--cards {
-    @apply lg:grid w-full text-center items-center gap-4 justify-between md:items-baseline md:p-6 m-auto xl:w-[1280px] lg:grid-cols-3;
+    @apply flex flex-col lg:grid text-center items-center gap-4 justify-between md:items-baseline md:p-6 m-auto xl:w-[1280px] lg:grid-cols-3 w-full;
 }
 .welcome__article, .main__section__article{
     @apply w-full p-2 md:p-6 content-center  justify-center;
@@ -122,6 +122,12 @@ p{
     @apply text-xl w-[80%] m-auto text-center;
 }
 
+
+/*VIDEOTUTORIALES*/
+
+.videotutorial-min{
+    @apply flex flex-col;
+}
 /*Card Videos tips*/
 .container_tips_cards, .content_videotutoriales{
     @apply sm:grid lg:grid-cols-3 xl:grid-cols-3 gap-4 content-center m-auto;
